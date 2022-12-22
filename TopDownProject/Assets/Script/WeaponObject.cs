@@ -10,6 +10,7 @@ public class WeaponObject : MonoBehaviour
     public int numMagazine;
     public int weaponDamage;
     public int fireRate;
+    public int index;
 
     private void Awake() 
     {

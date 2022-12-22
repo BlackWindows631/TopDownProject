@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 33455676425225724}
   - component: {fileID: 23862725518079440}
   - component: {fileID: 64383602332832046}
+  - component: {fileID: -1518476835110007349}
   m_Layer: 0
   m_Name: SM_Wep_HuntingRifle_01
   m_TagString: Weapon
@@ -351,6 +352,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43016381297202334, guid: 5e660baa071a59244a526787f74ef594, type: 2}
+--- !u!114 &-1518476835110007349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862461175073062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d2027aa8887f4c961a28e051e6815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: 
+  weaponCanon: {fileID: 0}
+  magazineSize: 0
+  numMagazine: 0
+  weaponDamage: 0
+  fireRate: 0
+  index: 3
 --- !u!1 &2859708506572150656
 GameObject:
   m_ObjectHideFlags: 0

@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 33411448468138766}
   - component: {fileID: 23054385816510024}
   - component: {fileID: 64615748728105830}
+  - component: {fileID: -6364358512696383231}
   m_Layer: 0
   m_Name: SM_Wep_Minigun_01
   m_TagString: Weapon
@@ -367,6 +368,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43119624933025712, guid: 22a63aaa3ad29fa4c99defcade75a526, type: 2}
+--- !u!114 &-6364358512696383231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946215608911346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d2027aa8887f4c961a28e051e6815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: 
+  weaponCanon: {fileID: 0}
+  magazineSize: 0
+  numMagazine: 0
+  weaponDamage: 0
+  fireRate: 0
+  index: 10
 --- !u!1 &1981898728667092
 GameObject:
   m_ObjectHideFlags: 0

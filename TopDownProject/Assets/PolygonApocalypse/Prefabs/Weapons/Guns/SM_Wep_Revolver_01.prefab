@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 33370664240897332}
   - component: {fileID: 23267273125228710}
   - component: {fileID: 64068215276121056}
+  - component: {fileID: -8220834082815545127}
   m_Layer: 0
   m_Name: SM_Wep_Revolver_01
   m_TagString: Weapon
@@ -186,6 +187,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43166622398364514, guid: abda5979b8598154e85ca536dfe22769, type: 2}
+--- !u!114 &-8220834082815545127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111015175407080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d2027aa8887f4c961a28e051e6815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: 
+  weaponCanon: {fileID: 0}
+  magazineSize: 0
+  numMagazine: 0
+  weaponDamage: 0
+  fireRate: 0
+  index: 15
 --- !u!1 &1377983362077928
 GameObject:
   m_ObjectHideFlags: 0

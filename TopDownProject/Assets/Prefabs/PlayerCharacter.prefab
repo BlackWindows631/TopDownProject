@@ -104,6 +104,7 @@ MonoBehaviour:
   - {fileID: 3752498978541202618}
   - {fileID: 6192545822473805824}
   - {fileID: 7780604586647466777}
+  textMeshH: {fileID: 0}
 --- !u!135 &831476694233595935
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -252,7 +253,7 @@ Transform:
   - {fileID: 2297779769019262347}
   - {fileID: 5343117298464971637}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2297779769238459975
 MeshFilter:
@@ -333,7 +334,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &2297779769238459968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,6 +464,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 24
 --- !u!4 &646127631319084902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4651026209933144, guid: dd5e78229ec4a3f4eb3b2ace8c44e70e, type: 3}
@@ -563,6 +565,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 5
 --- !u!1001 &2060028841712829743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -658,6 +661,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 18
 --- !u!1001 &2140763342252801950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -748,6 +752,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 14
 --- !u!4 &2142239383397095682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4300965689403036, guid: a1608518da2a041418e8a5351d223d94, type: 3}
@@ -848,6 +853,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 23
 --- !u!1001 &2795530452989361469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -943,6 +949,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 8
 --- !u!1001 &2822820124352903803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1038,6 +1045,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 19
 --- !u!1001 &3350395822543776542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1133,6 +1141,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 11
 --- !u!1001 &3516280379532024553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1228,6 +1237,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 15
 --- !u!1001 &3739709047964467332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1318,6 +1328,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 10
 --- !u!4 &3740496838377553654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4212910902197874, guid: a807abad9d573264b96019ffcfcae869, type: 3}
@@ -1413,6 +1424,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 26
 --- !u!4 &3753986301213729224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4383389533708888, guid: e465d39263959404582f9fdf69f40c53, type: 3}
@@ -1508,6 +1520,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 2
 --- !u!4 &3776672945928382180 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4256746541367074, guid: a3fe0be603767ae42a0d14c81d777c2b, type: 3}
@@ -1603,6 +1616,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 17
 --- !u!4 &3974640713897072916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4496240175832878, guid: ac46653d56756124eb294a6b8c58d2d3, type: 3}
@@ -1698,6 +1712,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 16
 --- !u!4 &4115459729284970310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4733480613099828, guid: 379c13fc7bb54114e8f838c5ad3a0eab, type: 3}
@@ -1793,6 +1808,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 1
 --- !u!4 &4129410384001698558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4225424073553050, guid: d9f9bf1ca5142254ba3a359ff4a34b3e, type: 3}
@@ -1893,6 +1909,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 7
 --- !u!1001 &5345264771194569380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1988,6 +2005,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 6
 --- !u!1001 &5896848052812878887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2078,6 +2096,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 20
 --- !u!4 &5898569667218393611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4008630067125804, guid: 5f73668964f88164aae003225d1f933f, type: 3}
@@ -2173,6 +2192,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 13
 --- !u!4 &5953380802063530484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4113667658017268, guid: 2673249e51517794ba8e07feee2a1d39, type: 3}
@@ -2273,6 +2293,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 27
 --- !u!1001 &6351526168705807430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2363,6 +2384,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 12
 --- !u!4 &6353362069100993450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4092682414206956, guid: f5c3bc26a8c162c4a9d22dbbcc59f479, type: 3}
@@ -2458,6 +2480,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 9
 --- !u!4 &6582379418048081802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4799756497750402, guid: 3e9dcf9e9d8d7a4438ae8cfb9e5badf2, type: 3}
@@ -2558,6 +2581,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 3
 --- !u!1001 &7496851476634953528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2653,6 +2677,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 22
 --- !u!1001 &7560639585351423457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2743,6 +2768,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 21
 --- !u!4 &7565076216106254803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4579576397550642, guid: a2458a3a2318bb64ea864a87f6558170, type: 3}
@@ -2843,6 +2869,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 28
 --- !u!1001 &8241902907157371820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2933,6 +2960,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 25
 --- !u!4 &8246450335951576440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4602441221048020, guid: e22ad038422a02c49b86a09ff69dedfc, type: 3}
@@ -3033,6 +3061,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 0
 --- !u!1001 &8661663641631034713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3123,6 +3152,7 @@ MonoBehaviour:
   numMagazine: 0
   weaponDamage: 0
   fireRate: 0
+  index: 4
 --- !u!4 &8663408036553864117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4207305543073516, guid: 339cc5e61566f63428dc7728c5c3c5a0, type: 3}

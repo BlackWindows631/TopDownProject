@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 33148503590737604}
   - component: {fileID: 23100420200266682}
   - component: {fileID: 64621371638796974}
+  - component: {fileID: 1856552466100129276}
   m_Layer: 0
   m_Name: SM_Wep_RocketLauncher_01
   m_TagString: Weapon
@@ -186,6 +187,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43907127462558768, guid: 0ef179076de5b444591aeb2fcd6b4955, type: 2}
+--- !u!114 &1856552466100129276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265324198127248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9d2027aa8887f4c961a28e051e6815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: 
+  weaponCanon: {fileID: 0}
+  magazineSize: 0
+  numMagazine: 0
+  weaponDamage: 0
+  fireRate: 0
+  index: 20
 --- !u!1 &1409115737782438
 GameObject:
   m_ObjectHideFlags: 0
