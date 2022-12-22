@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="New Weapon", menuName ="Weapon")]
-public class WeaponObject : ScriptableObject
+public class WeaponObject : MonoBehaviour
 {
     public string weaponName;
-    public GameObject weaponObject;
     public Transform weaponCanon;
     public int magazineSize;
     public int numMagazine;
     public int weaponDamage;
     public int fireRate;
+
+    private void Awake() 
+    {
+        weaponName = this.name;
+        weaponCanon = this.gameObject.transform.Find("Canon");
+    }
 }
