@@ -6,14 +6,19 @@ public class WeaponObject : MonoBehaviour
 {
     public string weaponName;
     public Transform weaponCanon;
-    public int magazineSize;
-    public int numMagazine;
-    public int weaponDamage;
-    public int fireRate;
+    WeaponHandler weaponHandler;
+    
+    public int damage;
+    public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;
+    public int magazineSize, bulletsPerTap;
+    public bool allowButtonHold;
+
     public int index;
 
     private void Awake() 
     {
+        weaponHandler = GetComponentInParent<WeaponHandler>();
+        weaponHandler.bulletsLeft = magazineSize;
         weaponName = this.name;
         weaponCanon = this.gameObject.transform.Find("Canon");
     }

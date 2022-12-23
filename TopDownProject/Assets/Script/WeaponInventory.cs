@@ -9,6 +9,7 @@ public class WeaponInventory : MonoBehaviour
     RaycastHit hit;
     
     public TextMeshProUGUI textMeshH;
+    public WeaponObject currentWeapon;
 
     private void Awake() 
     {
@@ -31,7 +32,7 @@ public class WeaponInventory : MonoBehaviour
             if(Input.GetKey(KeyCode.E))
             {
                 textMeshH.text = "";
-                WeaponObject weaponObject = other.gameObject.GetComponent<WeaponObject>();
+                WeaponPickup weaponObject = other.gameObject.GetComponent<WeaponPickup>();
                 SetupWeapon(weaponObject.index);
                 Destroy(other.gameObject);
                 Debug.Log(other.gameObject.name + " picked up");
@@ -54,6 +55,7 @@ public class WeaponInventory : MonoBehaviour
         {
             weaponList[i].SetActive(false);
         }
+        currentWeapon = weaponList[index].GetComponent<WeaponObject>();
         weaponList[index].SetActive(true);
     }
 }
