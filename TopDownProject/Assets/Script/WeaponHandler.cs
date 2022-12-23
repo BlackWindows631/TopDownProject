@@ -79,14 +79,14 @@ public class WeaponHandler : MonoBehaviour
         if(Physics.Raycast(attackPoint.position,direction, out rayHit, weaponObject.range))
         {
             Debug.Log(rayHit.collider.name);
-
+            Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0,180,0));
             if(rayHit.collider.CompareTag("Enemy"))
             {
                 // Damage enemy
             }
         }
 
-        Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0,180,0));
+        
         Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
 
         bulletsLeft--;

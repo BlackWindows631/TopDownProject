@@ -18,8 +18,12 @@ public class WeaponObject : MonoBehaviour
     private void Awake() 
     {
         weaponHandler = GetComponentInParent<WeaponHandler>();
-        weaponHandler.bulletsLeft = magazineSize;
         weaponName = this.name;
         weaponCanon = this.gameObject.transform.Find("Canon");
+    }
+
+    private void OnEnable() 
+    {
+        weaponHandler.bulletsLeft = magazineSize;
     }
 }
