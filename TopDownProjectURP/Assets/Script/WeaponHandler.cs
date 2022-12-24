@@ -76,7 +76,7 @@ public class WeaponHandler : MonoBehaviour
         readyToShoot = false;
 
         var tracer = Instantiate(bulletTrail,attackPoint.position,Quaternion.identity);
-        tracer.AddPosition(attackPoint.position);
+        tracer.AddPosition(attackPoint.position);        
 
         float x = Random.Range(-weaponObject.spread, weaponObject.spread);
         float y = Random.Range(-weaponObject.spread, weaponObject.spread);
@@ -86,16 +86,17 @@ public class WeaponHandler : MonoBehaviour
         if(Physics.Raycast(attackPoint.position,direction, out rayHit, weaponObject.range))
         {
             tracer.transform.position = rayHit.point;
+            
             Debug.Log(rayHit.collider.name);
-            if(rayHit.collider.CompareTag("Enemy"))
-            {
+            if(rayHit.collider.CompareTag("Enemy")){
                 EnemySystem enemySystem = rayHit.collider.gameObject.GetComponent<EnemySystem>();
                 Instantiate(bloodSplash,rayHit.point,Quaternion.LookRotation(rayHit.normal));
                 enemySystem.health -= weaponObject.damage;
                 Debug.DrawLine(attackPoint.position,rayHit.point,Color.green,1000f);
-            }
-            else
-            {
+            } else if (rayHit.collider.CompareTag("Barrel")){
+                ExplosiveBarrel explosiveBarrel = rayHit.collider.gameObject.GetComponent<ExplosiveBarrel>();
+                explosiveBarrel.ExplodeBarrel();
+            } else{
                 Debug.DrawLine(attackPoint.position,rayHit.point,Color.red,1000f);
                 Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0,180,0));
             }
@@ -108,11 +109,9 @@ public class WeaponHandler : MonoBehaviour
 
         Invoke("ResetShot",weaponObject.timeBetweenShooting);
 
-        if(bulletsShot > 0 && bulletsLeft > 0)
-        {
+        if(bulletsShot > 0 && bulletsLeft > 0){
             Invoke("Shoot",weaponObject.timeBetweenShots);
         }
-        
     }
 
     private void ResetShot()
