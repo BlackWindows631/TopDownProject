@@ -86,8 +86,7 @@ public class WeaponHandler : MonoBehaviour
         if(Physics.Raycast(attackPoint.position,direction, out rayHit, weaponObject.range))
         {
             tracer.transform.position = rayHit.point;
-            
-            Debug.Log(rayHit.collider.name);
+
             if(rayHit.collider.CompareTag("Enemy")){
                 EnemySystem enemySystem = rayHit.collider.gameObject.GetComponent<EnemySystem>();
                 Instantiate(bloodSplash,rayHit.point,Quaternion.LookRotation(rayHit.normal));
