@@ -8,6 +8,8 @@ public class WeaponHandler : MonoBehaviour
     public WeaponInventory weaponInventory;
     public WeaponObject weaponObject;
 
+    Quaternion bloodSplashRotation;
+
     [Header("Gun stats")]
     public int bulletsLeft, bulletsShot;
 
@@ -23,6 +25,8 @@ public class WeaponHandler : MonoBehaviour
     public GameObject muzzleFlash,bulletHoleGraphic;
     public TextMeshProUGUI text;
     public TrailRenderer bulletTrail;
+
+    public ParticleSystem bloodSplash;
 
     private void Awake() 
     {
@@ -78,19 +82,24 @@ public class WeaponHandler : MonoBehaviour
         float y = Random.Range(-weaponObject.spread, weaponObject.spread);
 
         Vector3 direction = weaponInventory.currentWeapon.weaponCanon.transform.forward + new Vector3(x,y,0);
-
-        Debug.DrawRay(attackPoint.position,direction,Color.red,weaponObject.range);
+        
         if(Physics.Raycast(attackPoint.position,direction, out rayHit, weaponObject.range))
         {
             tracer.transform.position = rayHit.point;
             Debug.Log(rayHit.collider.name);
-            Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0,180,0));
             if(rayHit.collider.CompareTag("Enemy"))
             {
-                // Damage enemy
+                EnemySystem enemySystem = rayHit.collider.gameObject.GetComponent<EnemySystem>();
+                Instantiate(bloodSplash,rayHit.point,Quaternion.LookRotation(rayHit.normal));
+                enemySystem.health -= weaponObject.damage;
+                Debug.DrawLine(attackPoint.position,rayHit.point,Color.green,1000f);
+            }
+            else
+            {
+                Debug.DrawLine(attackPoint.position,rayHit.point,Color.red,1000f);
+                Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0,180,0));
             }
         }
-
         
         Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
 
