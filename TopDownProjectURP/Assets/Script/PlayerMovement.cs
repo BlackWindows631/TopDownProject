@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     float stamina;
     float maxStamina = 100;
     public bool canRun = true;
+    bool isUsingStamina = false;
     bool startReset = false;
 
     [Header("Graphics")]
@@ -42,6 +43,15 @@ public class PlayerMovement : MonoBehaviour
         {
             stamina += Time.deltaTime * 10;
         }
+
+        if(stamina < maxStamina && !isUsingStamina)
+        {
+            time += Time.deltaTime;
+            if(time > 3)
+            {
+                stamina += Time.deltaTime * 10;
+            }
+        }
     }
 
     private void HandleMovement()
@@ -63,11 +73,14 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.forward * Time.deltaTime * 7f * verticalInput);
             transform.Translate(Vector3.right * Time.deltaTime * 7f * horizontalInput);
             stamina -= Time.deltaTime * 10;
+            time = 0;
+            isUsingStamina = true;
         }
         else
         {
             transform.Translate(Vector3.forward * Time.deltaTime * 3.5f * verticalInput);
             transform.Translate(Vector3.right * Time.deltaTime * 3.5f * horizontalInput);
+            isUsingStamina = false;
         }
     }
     
@@ -88,5 +101,6 @@ public class PlayerMovement : MonoBehaviour
     {
         canRun = false;
         startReset = true;
+        isUsingStamina = false;
     }
 }
