@@ -7,10 +7,14 @@ public class CharacterAnimation : MonoBehaviour
     [SerializeField]
     Animator animator;
 
+    [SerializeField]
+    PlayerMovement playerMovement;
+
     // Start is called before the first frame update
     void Awake()
     {
         animator = GetComponent<Animator>();
+        playerMovement = GetComponentInParent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -23,7 +27,7 @@ public class CharacterAnimation : MonoBehaviour
         animator.SetFloat("forward",z);
         animator.SetFloat("strafe",x);
 
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetKey(KeyCode.LeftShift) && playerMovement.canRun)
         {
             animator.SetBool("isRunning",true);
         }
