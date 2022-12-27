@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,21 +9,39 @@ public class PlayerMovement : MonoBehaviour
     public int speed = 5;
     private float horizontalInput;
     private float verticalInput;
+    private float time;
     public Camera cameraPlayer;
 
     float stamina;
     float maxStamina = 100;
     public bool canRun = true;
+    bool startReset = false;
+
+    [Header("Graphics")]
+    public Slider slider;
 
     private void Awake() 
     {
         stamina = maxStamina;
+        slider.maxValue = maxStamina;
     }
 
     void Update()
     {
         HandleMovement();
         RotateTorwardMouse();   
+        slider.value = stamina;
+
+        if(stamina >= maxStamina)
+        {
+            startReset = false;
+            canRun = true;
+        }
+
+        if(startReset)
+        {
+            stamina += Time.deltaTime * 10;
+        }
     }
 
     private void HandleMovement()
@@ -36,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         if(stamina <= 0)
         {
             canRun = false;
+            ResetStamina();
         }
 
         if(Input.GetKey(KeyCode.LeftShift) && canRun)
@@ -49,8 +69,6 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.forward * Time.deltaTime * 3.5f * verticalInput);
             transform.Translate(Vector3.right * Time.deltaTime * 3.5f * horizontalInput);
         }
-
-        
     }
     
     private void RotateTorwardMouse()
@@ -64,5 +82,11 @@ public class PlayerMovement : MonoBehaviour
             target.y = transform.position.y;
             transform.LookAt(target);
         }
+    }
+
+    private void ResetStamina()
+    {
+        canRun = false;
+        startReset = true;
     }
 }
