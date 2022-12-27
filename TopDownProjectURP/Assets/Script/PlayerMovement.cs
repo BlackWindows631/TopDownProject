@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Vector3 mousePosition;
-    public float speed = 5.0f;
+    public int speed = 5;
     private float horizontalInput;
     private float verticalInput;
     public Camera cameraPlayer;
@@ -21,8 +21,18 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
-        transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime * 7 * verticalInput);
+            transform.Translate(Vector3.right * Time.deltaTime * 7 * horizontalInput);
+        }
+        else
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime * 4 * verticalInput);
+            transform.Translate(Vector3.right * Time.deltaTime * 4 * horizontalInput);
+        }
+
+        
     }
     
     private void RotateTorwardMouse()

@@ -16,6 +16,20 @@ public class CharacterAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("vertical",Input.GetAxis("Vertical"));
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+
+        animator.SetFloat("forward",z);
+        animator.SetFloat("strafe",x);
+
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            animator.SetBool("isRunning",true);
+        }
+        else
+        {
+            animator.SetBool("isRunning",false);
+        }
     }
 }
