@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float verticalInput;
     private float time;
     public Camera cameraPlayer;
+    public LayerMask layerMask;
 
     float stamina;
     float maxStamina = 100;
@@ -87,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
         mousePosition = Input.mousePosition;
         Ray ray = cameraPlayer.ScreenPointToRay(Input.mousePosition);
 
-        if(Physics.Raycast(ray,out RaycastHit hitInfo, maxDistance: 300f))
+        if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue,~layerMask))
         {
             var target = hitInfo.point;
             target.y = transform.position.y;

@@ -9,6 +9,7 @@ public class WeaponObject : MonoBehaviour
     WeaponHandler weaponHandler;
     public Transform rightHandIK;
     public Transform leftHandIK;
+    public AudioClip weaponSound;
     
     public int damage;
     public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;

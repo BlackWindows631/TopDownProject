@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-using UnityEngine.Animations.Rigging;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     CinemachineVirtualCamera virtualCamera;
+
+    public Slider waterSlider;
+    public Slider hungerSlider;
 
     float sensitivity = 25;
     float currentZoom;
@@ -15,11 +18,24 @@ public class PlayerController : MonoBehaviour
     float velocity = 0;
     float minZoom = 4;
     float maxZoom = 10;
+    float maxFood = 100;
+    float maxWater = 100;
+    float water;
+    float food;
+
+    private void Awake() 
+    {
+        food = maxFood;
+        water = maxWater;
+        hungerSlider.maxValue = maxFood;
+        waterSlider.maxValue = maxWater;
+    }
 
     void Update()
     {
         HandleZoom();
-
+        HandleFood();
+        HandleWater();
     }
 
     void HandleZoom()
@@ -39,9 +55,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void HandleHandIK()
+    void HandleFood()
     {
+        food -= Time.deltaTime;
+        hungerSlider.value = food;
+    }
 
-
+    void HandleWater()
+    {
+        water -= Time.deltaTime;
+        waterSlider.value = water;
     }
 }
