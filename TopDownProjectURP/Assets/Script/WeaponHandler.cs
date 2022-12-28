@@ -36,8 +36,9 @@ public class WeaponHandler : MonoBehaviour
 
     private void Update() 
     {
-        weaponObject = weaponInventory.currentWeapon;
+        weaponObject = weaponInventory.currentWeapon; 
         attackPoint = weaponObject.weaponCanon.transform;
+        
         MyInput();
         text.text = bulletsLeft.ToString() + " / " + weaponObject.magazineSize.ToString();
     }

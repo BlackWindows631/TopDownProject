@@ -22,6 +22,8 @@ public class WeaponObject : MonoBehaviour
         weaponHandler = GetComponentInParent<WeaponHandler>();
         weaponName = this.name;
         weaponCanon = this.gameObject.transform.Find("Canon");
+        rightHandIK = this.gameObject.transform.Find("ref_right_hand_grip");
+        leftHandIK = this.gameObject.transform.Find("ref_left_hand_grip");
     }
 
     private void OnEnable() 

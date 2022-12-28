@@ -15,11 +15,6 @@ public class WeaponInventory : MonoBehaviour
     public TwoBoneIKConstraint leftHandIK;
     public RigBuilder rigBuilder;
 
-    private void Awake() 
-    {
-        SetupWeapon(0);
-    }
-
     private void OnTriggerEnter(Collider other) 
     {
         if(other.gameObject.tag == "Weapon")

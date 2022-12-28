@@ -453,8 +453,10 @@ Transform:
   - {fileID: 4981248141749764}
   - {fileID: 4349432417681042}
   - {fileID: 4759561318523488040}
+  - {fileID: 6506564181106247429}
+  - {fileID: 8539857252353633622}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33625998777930994
 MeshFilter:
@@ -534,10 +536,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: 
   weaponCanon: {fileID: 0}
+  rightHandIK: {fileID: 0}
+  leftHandIK: {fileID: 0}
+  damage: 0
+  timeBetweenShooting: 0
+  spread: 0
+  range: 0
+  reloadTime: 0
+  timeBetweenShots: 0
   magazineSize: 0
-  numMagazine: 0
-  weaponDamage: 0
-  fireRate: 0
+  bulletsPerTap: 0
+  allowButtonHold: 0
   index: 5
 --- !u!1 &8489543993933792
 GameObject:
@@ -570,3 +579,65 @@ Transform:
   m_Father: {fileID: 4489228846547044}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5056174953940948979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8539857252353633622}
+  m_Layer: 0
+  m_Name: ref_left_hand_grip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8539857252353633622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056174953940948979}
+  m_LocalRotation: {x: 0.5019634, y: -0.68921685, z: -0.25740552, w: -0.45470357}
+  m_LocalPosition: {x: -0.279, y: -0.11499798, z: -0.036000013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4489228846547044}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -54.224, y: 140.944, z: 308.452}
+--- !u!1 &6749509808951655847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6506564181106247429}
+  m_Layer: 0
+  m_Name: ref_right_hand_grip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6506564181106247429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6749509808951655847}
+  m_LocalRotation: {x: 0.5168749, y: -0.4304594, z: 0.4825337, w: 0.5609869}
+  m_LocalPosition: {x: 0.287, y: -0.04100001, z: -0.21899998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4489228846547044}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 84.468, y: 9.466, z: 89.998}
