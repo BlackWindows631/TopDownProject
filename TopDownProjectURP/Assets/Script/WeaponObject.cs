@@ -7,6 +7,8 @@ public class WeaponObject : MonoBehaviour
     public string weaponName;
     public Transform weaponCanon;
     WeaponHandler weaponHandler;
+    public Transform rightHandIK;
+    public Transform leftHandIK;
     
     public int damage;
     public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;

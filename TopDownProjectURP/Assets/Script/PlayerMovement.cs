@@ -56,8 +56,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        Debug.Log(stamina);
-        Debug.Log(canRun);
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
