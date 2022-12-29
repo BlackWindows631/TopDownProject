@@ -36,11 +36,19 @@ public class WeaponHandler : MonoBehaviour
 
     private void Update() 
     {
-        weaponObject = weaponInventory.currentWeapon; 
-        attackPoint = weaponObject.weaponCanon.transform;
+        if(weaponInventory.currentWeapon == null)
+        {
+
+        }
+        else
+        {
+            weaponObject = weaponInventory.currentWeapon; 
+            attackPoint = weaponObject.weaponCanon.transform;
         
-        MyInput();
-        text.text = bulletsLeft.ToString() + " / " + weaponObject.magazineSize.ToString();
+            MyInput();
+            text.text = bulletsLeft.ToString() + " / " + weaponObject.magazineSize.ToString();
+        }
+        
     }
 
     private void MyInput()
@@ -88,15 +96,20 @@ public class WeaponHandler : MonoBehaviour
         {
             tracer.transform.position = rayHit.point;
 
-            if(rayHit.collider.CompareTag("Enemy")){
+            if(rayHit.collider.CompareTag("Enemy"))
+            {
                 EnemySystem enemySystem = rayHit.collider.gameObject.GetComponent<EnemySystem>();
                 Instantiate(bloodSplash,rayHit.point,Quaternion.LookRotation(rayHit.normal));
                 enemySystem.health -= weaponObject.damage;
                 Debug.DrawLine(attackPoint.position,rayHit.point,Color.green,1000f);
-            } else if (rayHit.collider.CompareTag("Barrel")){
+            } 
+            else if (rayHit.collider.CompareTag("Barrel"))
+            {
                 ExplosiveBarrel explosiveBarrel = rayHit.collider.gameObject.GetComponent<ExplosiveBarrel>();
                 explosiveBarrel.ExplodeBarrel();
-            } else{
+            } 
+            else
+            {
                 Debug.DrawLine(attackPoint.position,rayHit.point,Color.red,1000f);
                 Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0,180,0));
             }

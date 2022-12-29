@@ -195,7 +195,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 10
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -226,6 +226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 0}
+  waterSlider: {fileID: 0}
+  hungerSlider: {fileID: 0}
 --- !u!114 &2297779769238459995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +243,9 @@ MonoBehaviour:
   mousePosition: {x: 0, y: 0, z: 0}
   speed: 7
   cameraPlayer: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
   canRun: 1
   slider: {fileID: 0}
 --- !u!114 &862929243

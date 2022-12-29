@@ -44,13 +44,13 @@ public class PlayerController : MonoBehaviour
         if(Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             currentZoom = virtualCamera.m_Lens.OrthographicSize;
-            zoom = Mathf.SmoothDamp(currentZoom, currentZoom + Input.GetAxis("Mouse ScrollWheel") * sensitivity, ref velocity , 0.05f);
+            zoom = Mathf.SmoothDamp(currentZoom, currentZoom + -Input.GetAxis("Mouse ScrollWheel") * sensitivity, ref velocity , 0.05f);
             virtualCamera.m_Lens.OrthographicSize = zoom;
         }
         else if(Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             currentZoom = virtualCamera.m_Lens.OrthographicSize;
-            zoom = Mathf.SmoothDamp(currentZoom, currentZoom + Input.GetAxis("Mouse ScrollWheel") * sensitivity, ref velocity , 0.05f);
+            zoom = Mathf.SmoothDamp(currentZoom, currentZoom + -Input.GetAxis("Mouse ScrollWheel") * sensitivity, ref velocity , 0.05f);
             virtualCamera.m_Lens.OrthographicSize = zoom;
         }
     }

@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
     private void HandleMovement()
     {
 
@@ -82,20 +81,18 @@ public class PlayerMovement : MonoBehaviour
             isUsingStamina = false;
         }
     }
-    
     private void RotateTorwardMouse()
     {
         mousePosition = Input.mousePosition;
         Ray ray = cameraPlayer.ScreenPointToRay(Input.mousePosition);
 
-        if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue,~layerMask))
+        if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue, 1 << LayerMask.NameToLayer("Mousable")))
         {
             var target = hitInfo.point;
             target.y = transform.position.y;
             transform.LookAt(target);
         }
     }
-
     private void ResetStamina()
     {
         canRun = false;
