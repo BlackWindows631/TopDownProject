@@ -7,12 +7,18 @@ public class ZombieController : MonoBehaviour
 {
     int isIdle;
     public bool isIdling;
+    public bool isWalking;
+    public float zombieSpeed = 3f;
+    public float gravity = 1f;
+    Vector3 velocity;
     Transform playerToFollow;
-    public NavMeshAgent zombieMesh;
+    CharacterController zombieController;
+    Animator zombieAnimator;
+
     void Awake()
     {
-        zombieMesh = GetComponent<NavMeshAgent>();
-
+        zombieController = GetComponent<CharacterController>();
+        zombieAnimator = GetComponentInChildren<Animator>();
         isIdle = Random.Range(0,2);
         if(isIdle == 1)
         {
@@ -26,7 +32,15 @@ public class ZombieController : MonoBehaviour
 
     void Update()
     {
-        zombieMesh.SetDestination(playerToFollow.position);
+        zombieAnimator.SetBool("isWalking",isWalking);
+        if(playerToFollow == null)
+        {
+
+        }
+        else
+        {
+            HandleZombieMovement();
+        }
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -35,5 +49,10 @@ public class ZombieController : MonoBehaviour
         {
             playerToFollow = other.gameObject.transform;
         }
+    }
+
+    private void HandleZombieMovement()
+    {
+        isWalking = true;
     }
 }
