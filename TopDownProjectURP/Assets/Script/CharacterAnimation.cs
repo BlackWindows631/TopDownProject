@@ -9,12 +9,16 @@ public class CharacterAnimation : MonoBehaviour
 
     [SerializeField]
     PlayerMovement playerMovement;
+    public CharacterController characterController;
+
+    Vector3 rootMotion;
 
     // Start is called before the first frame update
     void Awake()
     {
+        characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        playerMovement = GetComponentInParent<PlayerMovement>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -35,5 +39,17 @@ public class CharacterAnimation : MonoBehaviour
         {
             animator.SetBool("isRunning",false);
         }
+    }
+
+    private void FixedUpdate() 
+    {
+        characterController.Move(rootMotion);
+        rootMotion = Vector3.zero;
+
+    }
+
+    private void OnAnimatorMove() 
+    {
+        rootMotion += animator.deltaPosition;
     }
 }

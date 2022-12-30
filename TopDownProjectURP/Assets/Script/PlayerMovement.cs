@@ -68,16 +68,12 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKey(KeyCode.LeftShift) && canRun)
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * 7f * verticalInput);
-            transform.Translate(Vector3.right * Time.deltaTime * 7f * horizontalInput);
             stamina -= Time.deltaTime * 10;
             time = 0;
             isUsingStamina = true;
         }
         else
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * 3.5f * verticalInput);
-            transform.Translate(Vector3.right * Time.deltaTime * 3.5f * horizontalInput);
             isUsingStamina = false;
         }
     }
