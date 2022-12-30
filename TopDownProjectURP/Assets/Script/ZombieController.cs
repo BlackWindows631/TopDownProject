@@ -14,10 +14,13 @@ public class ZombieController : MonoBehaviour
     Transform playerToFollow;
     CharacterController zombieController;
     Animator zombieAnimator;
+    NavMeshAgent navMeshAgent;
+    RaycastHit[] hit;
+    LayerMask layerMask;
 
     void Awake()
     {
-        zombieController = GetComponent<CharacterController>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
         zombieAnimator = GetComponentInChildren<Animator>();
         isIdle = Random.Range(0,2);
         if(isIdle == 1)
@@ -32,7 +35,16 @@ public class ZombieController : MonoBehaviour
 
     void Update()
     {
-        zombieAnimator.SetBool("isWalking",isWalking);
+        Collider[] hitInfo = Physics.OverlapSphere(transform.position,7.5f);
+
+        foreach (Collider hit in hitInfo)
+        {
+            if(hit.gameObject.CompareTag("Player"))
+            {
+                playerToFollow = hit.gameObject.transform;
+            }     
+        }
+
         if(playerToFollow == null)
         {
 
@@ -53,6 +65,29 @@ public class ZombieController : MonoBehaviour
 
     private void HandleZombieMovement()
     {
-        isWalking = true;
+        navMeshAgent.SetDestination(playerToFollow.position);
+        zombieAnimator.SetFloat("Speed",1f,0.3f,Time.deltaTime);
+        HandleZombieRotation();
+
+        float distanceToPlayer = Vector3.Distance(playerToFollow.position,transform.position);
+        if(distanceToPlayer <= navMeshAgent.stoppingDistance)
+        {
+            zombieAnimator.SetFloat("Speed",0f);
+        }
+    }
+
+    private void HandleZombieRotation()
+    {
+        Vector3 direction = playerToFollow.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
+        transform.
+        
+        rotation = rotation;
+    }
+
+    private void OnDrawGizmos() 
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position,7.5f);
     }
 }
