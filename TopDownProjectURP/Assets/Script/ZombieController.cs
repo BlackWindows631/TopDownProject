@@ -10,19 +10,22 @@ public class ZombieController : MonoBehaviour
     public bool isWalking;
     public float zombieSpeed = 3f;
     public float gravity = 1f;
+    float yRotation;
     Vector3 velocity;
     Transform playerToFollow;
-    CharacterController zombieController;
     Animator zombieAnimator;
     NavMeshAgent navMeshAgent;
     RaycastHit[] hit;
     LayerMask layerMask;
+    Vector3 rootMotionZombie;
 
     void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         zombieAnimator = GetComponentInChildren<Animator>();
+        zombieAnimator.SetFloat("Speed",0f);
         isIdle = Random.Range(0,2);
+
         if(isIdle == 1)
         {
             isIdling = true;
@@ -47,7 +50,7 @@ public class ZombieController : MonoBehaviour
 
         if(playerToFollow == null)
         {
-
+            
         }
         else
         {
@@ -55,17 +58,8 @@ public class ZombieController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other) 
-    {
-        if(other.gameObject.CompareTag("Player"))
-        {
-            playerToFollow = other.gameObject.transform;
-        }
-    }
-
     private void HandleZombieMovement()
     {
-        navMeshAgent.SetDestination(playerToFollow.position);
         zombieAnimator.SetFloat("Speed",1f,0.3f,Time.deltaTime);
         HandleZombieRotation();
 
@@ -78,11 +72,8 @@ public class ZombieController : MonoBehaviour
 
     private void HandleZombieRotation()
     {
-        Vector3 direction = playerToFollow.position - transform.position;
-        Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
-        transform.
-        
-        rotation = rotation;
+        Vector3 targetPosition = new Vector3(playerToFollow.transform.position.x, transform.position.y, playerToFollow.transform.position.z);
+        transform.LookAt(targetPosition);
     }
 
     private void OnDrawGizmos() 
