@@ -6,10 +6,14 @@ public class CharacterAnimation : MonoBehaviour
 {
     [SerializeField]
     Animator animator;
+    WeaponHandler weaponHandler;
+    WeaponInventory weaponInventory;
 
     [SerializeField]
     PlayerMovement playerMovement;
     public CharacterController characterController;
+    bool isPrimaryEquipped = false;
+    bool isSecondaryEquipped = false;
 
     Vector3 rootMotion;
 
@@ -45,6 +49,8 @@ public class CharacterAnimation : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
+        weaponHandler = GetComponent<WeaponHandler>();
+        weaponInventory = GetComponentInChildren<WeaponInventory>();
     }
 
     // Update is called once per frame
@@ -74,6 +80,33 @@ public class CharacterAnimation : MonoBehaviour
         {
             animator.SetBool("isAiming",false);
         }
+
+        if(weaponInventory.secondaryWeapon != null)
+        {
+            if(Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                isSecondaryEquipped = !isSecondaryEquipped;
+                if(isSecondaryEquipped == true)
+                {
+                    animator.Play("Unholster_gun",1);
+                }
+                else if(isSecondaryEquipped == false)
+                {
+                    animator.Play("Holster_gun",1);
+                }
+                animator.SetBool("isSecondary",isSecondaryEquipped);
+            }
+        }
+
+        if(weaponInventory.primaryWeapon != null)
+        {
+            if(Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                isPrimaryEquipped = !isPrimaryEquipped;
+                animator.SetBool("isPrimary", isPrimaryEquipped);
+            }
+        }
+        
     }
 
     private void FixedUpdate() 

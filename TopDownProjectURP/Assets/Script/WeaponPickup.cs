@@ -24,9 +24,18 @@ public class WeaponPickup : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.E))
             {
-                weaponInventory.SetupWeapon(index);
-                textMeshH.text = "";
-                Destroy(this.gameObject);
+                if(this.gameObject.CompareTag("Primary"))
+                {
+                    weaponInventory.SetupPrimaryWeapon(index);
+                    textMeshH.text = "";
+                    Destroy(this.gameObject);
+                }
+                else if(this.gameObject.CompareTag("Secondary"))
+                {
+                    weaponInventory.SetupSecondaryWeapon(index);
+                    textMeshH.text = "";
+                    Destroy(this.gameObject);
+                }
             }
         }
     }
