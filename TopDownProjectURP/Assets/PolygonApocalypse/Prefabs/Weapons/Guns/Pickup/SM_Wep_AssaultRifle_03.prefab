@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 5400570305666461307}
   m_Layer: 0
   m_Name: SM_Wep_AssaultRifle_03
-  m_TagString: Weapon
+  m_TagString: Primary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

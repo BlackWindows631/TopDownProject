@@ -15,46 +15,7 @@ public class WeaponInventory : MonoBehaviour
     public TwoBoneIKConstraint leftHandIK;
     public RigBuilder rigBuilder;
 
-    /*private void OnTriggerEnter(Collider other) 
-    {
-        if(other.gameObject.CompareTag("Weapon"))
-        {
-            Debug.Log("Weapon detected");
-            textMeshH.text = "Pick up " + other.gameObject.name;
-        }
-    }*/
-
-    private void OnTriggerStay(Collider other) 
-    {
-        Debug.Log(other.gameObject.name);
-        if(other.gameObject.CompareTag("Player"))
-        {
-            return;
-        }
-
-        if(other.gameObject.CompareTag("Weapon"))
-        {
-            if(Input.GetKey(KeyCode.E))
-            {
-                textMeshH.text = "";
-                WeaponPickup weaponObject = other.gameObject.GetComponent<WeaponPickup>();
-                SetupWeapon(weaponObject.index);
-                Destroy(other.gameObject);
-                Debug.Log(other.gameObject.name + " picked up");
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other) 
-    {
-        if(other.gameObject.CompareTag("Weapon"))
-        {
-            Debug.Log("Weapon left");
-            textMeshH.text = "";
-        }
-    }
-
-    private void SetupWeapon(int index)
+    public void SetupWeapon(int index)
     {
         for(int i = 0 ; i < 28 ; i++)
         {

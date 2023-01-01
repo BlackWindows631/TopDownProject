@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7293166676195804251}
   m_Layer: 0
   m_Name: SM_Wep_SubMGun_01
-  m_TagString: Weapon
+  m_TagString: Secondary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,9 +99,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025874851918808}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43102009237788248, guid: f6559fc8a45c72e4d97b857cc20d08e4, type: 2}
@@ -121,6 +129,7 @@ MonoBehaviour:
   weaponCanon: {fileID: 0}
   rightHandIK: {fileID: 0}
   leftHandIK: {fileID: 0}
+  weaponSound: {fileID: 0}
   damage: 0
   timeBetweenShooting: 0
   spread: 0

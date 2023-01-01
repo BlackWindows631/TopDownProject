@@ -214,12 +214,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1132504410}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &17495437 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1263777055603640, guid: 72beb6d101fd90f43951b1ab619656b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1000400160}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &32842822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4733480613099828, guid: 1a65fe35933b50b4781c8521a9740968,
@@ -356,25 +350,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1492159541042334, guid: 385c61a277c577249b961b9e8bee0d81, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1643787255913046, guid: 385c61a277c577249b961b9e8bee0d81, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1652972229580220, guid: 385c61a277c577249b961b9e8bee0d81, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Rifle_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1652972229580220, guid: 385c61a277c577249b961b9e8bee0d81, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840541810645620, guid: 385c61a277c577249b961b9e8bee0d81, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4252037922489668, guid: 385c61a277c577249b961b9e8bee0d81, type: 3}
       propertyPath: m_RootOrder
@@ -418,11 +396,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4252037922489668, guid: 385c61a277c577249b961b9e8bee0d81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3426222761300420328, guid: 385c61a277c577249b961b9e8bee0d81,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -584,11 +557,6 @@ PrefabInstance:
     - target: {fileID: 4023067158591890, guid: f296092b50652184db9b5ff8b8b85057, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 64181910784515640, guid: f296092b50652184db9b5ff8b8b85057,
-        type: 3}
-      propertyPath: m_Convex
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -868,27 +836,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1000400160}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &253560550
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17495437}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 2.5
-  m_Center: {x: 0, y: 0.039279766, z: 0.17686443}
 --- !u!1001 &258837011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1200,30 +1147,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wep_MachineGun_02
       objectReference: {fileID: 0}
-    - target: {fileID: 1395857700468264, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1434233742575186, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542737186657024, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1568130788940028, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1581309627743000, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1974063918887924, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4799756497750402, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1268,94 +1191,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3877890518704628402, guid: e42bf3b23d9ce1d43be3c7654f25f79b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42bf3b23d9ce1d43be3c7654f25f79b, type: 3}
---- !u!1001 &416011948
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.356
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.24000013
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -18.598982
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1160790022763000926, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_Name
-      value: Zombie2 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1160790022763000926, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c24a8f95755e2d41a4bcbd13638fde4, type: 3}
 --- !u!1001 &424177801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1374,33 +1214,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1045860944183866, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1059560299608364, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098440765491660, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1165989498757596, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1191657171110034, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1658074229854742, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
       propertyPath: m_Name
       value: SM_Wep_SniperRifle_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658074229854742, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4252610548398956, guid: 13f7e39feaaf6d242abdd5251df58fd2, type: 3}
       propertyPath: m_RootOrder
@@ -1446,11 +1262,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3986492321019131189, guid: 13f7e39feaaf6d242abdd5251df58fd2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1464,33 +1275,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124219379}
     m_Modifications:
-    - target: {fileID: 1058172408807228, guid: 41f4deb439811714db64ec114117663f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1324909116528240, guid: 41f4deb439811714db64ec114117663f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1365720252040626, guid: 41f4deb439811714db64ec114117663f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1496251060987992, guid: 41f4deb439811714db64ec114117663f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593655594476468, guid: 41f4deb439811714db64ec114117663f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1607563544594070, guid: 41f4deb439811714db64ec114117663f, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Hybrid_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607563544594070, guid: 41f4deb439811714db64ec114117663f, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4489228846547044, guid: 41f4deb439811714db64ec114117663f, type: 3}
       propertyPath: m_RootOrder
@@ -1534,10 +1321,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4489228846547044, guid: 41f4deb439811714db64ec114117663f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489543993933792, guid: 41f4deb439811714db64ec114117663f, type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4270539024632491372, guid: 41f4deb439811714db64ec114117663f,
@@ -1589,50 +1372,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wep_Hybrid_03
       objectReference: {fileID: 0}
-    - target: {fileID: 1092074819094010, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110461034046764, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127172336280522, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1201449048756096, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511325338200312, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1619079752682470, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1673415521011282, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1769763955837386, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901023676099088, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1926722658968304, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1998284553479402, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4654499761512070, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1675,11 +1414,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4654499761512070, guid: ac5c5e27fe1cb8d47a264f138029c3df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7003910758512023113, guid: ac5c5e27fe1cb8d47a264f138029c3df,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1745,7 +1479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1841,25 +1575,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1346918423437226, guid: a0f33b38e76a2ac4d90b019b4031860e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602349919291932, guid: a0f33b38e76a2ac4d90b019b4031860e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1726369113192864, guid: a0f33b38e76a2ac4d90b019b4031860e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1862461175073062, guid: a0f33b38e76a2ac4d90b019b4031860e, type: 3}
       propertyPath: m_Name
       value: SM_Wep_HuntingRifle_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862461175073062, guid: a0f33b38e76a2ac4d90b019b4031860e, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4514565422135916, guid: a0f33b38e76a2ac4d90b019b4031860e, type: 3}
       propertyPath: m_RootOrder
@@ -1903,11 +1621,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4514565422135916, guid: a0f33b38e76a2ac4d90b019b4031860e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2859708506572150656, guid: a0f33b38e76a2ac4d90b019b4031860e,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2012,29 +1725,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124219379}
     m_Modifications:
-    - target: {fileID: 1196142426454756, guid: e39a3ebf772e41647abf8bb8bb32e8ac, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1382996655360698, guid: e39a3ebf772e41647abf8bb8bb32e8ac, type: 3}
       propertyPath: m_Name
       value: SM_Wep_SniperRifle_Pneumatic_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1382996655360698, guid: e39a3ebf772e41647abf8bb8bb32e8ac, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1747036149383652, guid: e39a3ebf772e41647abf8bb8bb32e8ac, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1804881261700060, guid: e39a3ebf772e41647abf8bb8bb32e8ac, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1893352973506580, guid: e39a3ebf772e41647abf8bb8bb32e8ac, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4651026209933144, guid: e39a3ebf772e41647abf8bb8bb32e8ac, type: 3}
       propertyPath: m_RootOrder
@@ -2090,11 +1783,6 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 6900263584329333679, guid: e39a3ebf772e41647abf8bb8bb32e8ac,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2225,25 +1913,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1108274005616954, guid: 8fd4aff7e6d3fd14a94cb8c98d12410c, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111307167116862, guid: 8fd4aff7e6d3fd14a94cb8c98d12410c, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1311854592980844, guid: 8fd4aff7e6d3fd14a94cb8c98d12410c, type: 3}
       propertyPath: m_Name
       value: SM_Wep_HuntingRifle_Clean_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311854592980844, guid: 8fd4aff7e6d3fd14a94cb8c98d12410c, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444030071612964, guid: 8fd4aff7e6d3fd14a94cb8c98d12410c, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4207305543073516, guid: 8fd4aff7e6d3fd14a94cb8c98d12410c, type: 3}
       propertyPath: m_RootOrder
@@ -2289,11 +1961,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1950532562882233963, guid: 8fd4aff7e6d3fd14a94cb8c98d12410c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2317,37 +1984,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1161516410035258, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1192944687710050, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1347991933923114, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
       propertyPath: m_Name
       value: SM_Wep_SubMGun_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1347991933923114, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471350458791982, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1751591081843662, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1830233389008812, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925510032483906, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4383389533708888, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
       propertyPath: m_RootOrder
@@ -2391,11 +2030,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4383389533708888, guid: fc27040d64eab4a4dafae9b9a00606f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147951485952154323, guid: fc27040d64eab4a4dafae9b9a00606f1,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3426,16 +3060,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    - {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1263777055603640, guid: 72beb6d101fd90f43951b1ab619656b3,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 253560550}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72beb6d101fd90f43951b1ab619656b3, type: 3}
 --- !u!4 &1024062943 stripped
 Transform:
@@ -3461,33 +3089,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1068802873033948, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1314787683745144, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1346846878866392, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1562996608389564, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Pistol_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1562996608389564, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1823660752924116, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959191366579420, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4300965689403036, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
       propertyPath: m_RootOrder
@@ -3531,11 +3135,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4300965689403036, guid: 2f094849baef29d45a66cbfca434e3b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1248369523430315831, guid: 2f094849baef29d45a66cbfca434e3b4,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4046,53 +3645,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124219379}
     m_Modifications:
-    - target: {fileID: 1077988374857144, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1111015175407080, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Revolver_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111015175407080, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377983362077928, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1495934412016440, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1514507847401260, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1556162941347654, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863035670419364, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1924330680856996, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1931616489631576, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962799210750414, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1993928197282326, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4030818715711028, guid: ae470c8d3ecb7d1439c824e50b87bdd2, type: 3}
       propertyPath: m_RootOrder
@@ -4148,11 +3703,6 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 7764667902383282837, guid: ae470c8d3ecb7d1439c824e50b87bdd2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4169,22 +3719,6 @@ PrefabInstance:
     - target: {fileID: 1025874851918808, guid: 767f2e681c8e43f4398e787e31e3f6b9, type: 3}
       propertyPath: m_Name
       value: SM_Wep_SubMGun_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025874851918808, guid: 767f2e681c8e43f4398e787e31e3f6b9, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1083545751773082, guid: 767f2e681c8e43f4398e787e31e3f6b9, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1471442913278076, guid: 767f2e681c8e43f4398e787e31e3f6b9, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1564480144959166, guid: 767f2e681c8e43f4398e787e31e3f6b9, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4602441221048020, guid: 767f2e681c8e43f4398e787e31e3f6b9, type: 3}
       propertyPath: m_RootOrder
@@ -4240,11 +3774,6 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 7712709588944664599, guid: 767f2e681c8e43f4398e787e31e3f6b9,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4534,29 +4063,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124219379}
     m_Modifications:
-    - target: {fileID: 1019527197474774, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1051043256414930, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1328033259041762, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
       propertyPath: m_Name
       value: SM_Wep_SubMGun_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1328033259041762, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1402058261829292, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999386108636548, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4878301781655884, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
       propertyPath: m_RootOrder
@@ -4600,11 +4109,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878301781655884, guid: 584fd377e8cd1344fbc498eadd70478e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107011247471991388, guid: 584fd377e8cd1344fbc498eadd70478e,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2686454944264090231, guid: 584fd377e8cd1344fbc498eadd70478e,
@@ -4723,25 +4227,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1246820590042636, guid: ec51c2642a467e84bb38890e32abc29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1777867188030678, guid: ec51c2642a467e84bb38890e32abc29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1890876632808834, guid: ec51c2642a467e84bb38890e32abc29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1976984469360624, guid: ec51c2642a467e84bb38890e32abc29f, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Nailgun_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1976984469360624, guid: ec51c2642a467e84bb38890e32abc29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4092682414206956, guid: ec51c2642a467e84bb38890e32abc29f, type: 3}
       propertyPath: m_RootOrder
@@ -4787,11 +4275,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8511567268454242505, guid: ec51c2642a467e84bb38890e32abc29f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4805,61 +4288,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124219379}
     m_Modifications:
-    - target: {fileID: 1007413234445952, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1039363370430108, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1119933419261666, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1238971423961256, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1268074288100210, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1319036115938546, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Revolver_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1319036115938546, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341007348953438, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1445329599627352, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481790671357526, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499059356944094, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589325688497240, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1789984573485090, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1885875942577412, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4733480613099828, guid: 1a65fe35933b50b4781c8521a9740968, type: 3}
       propertyPath: m_RootOrder
@@ -4905,11 +4336,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1322290641013537966, guid: 1a65fe35933b50b4781c8521a9740968,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8224332093887760152, guid: 1a65fe35933b50b4781c8521a9740968,
         type: 3}
       propertyPath: textMeshH
@@ -4943,33 +4369,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1029265070445000, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1354955180803906, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621126097391826, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1767452628356680, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1773614356655062, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1886666021998926, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
       propertyPath: m_Name
       value: SM_Wep_SniperRifle_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1886666021998926, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4349297293556472, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
       propertyPath: m_RootOrder
@@ -5013,11 +4415,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4349297293556472, guid: 63cca41c049d2694ca3d7d536fc8d29f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041353799997253669, guid: 63cca41c049d2694ca3d7d536fc8d29f,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5119,29 +4516,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1160757617795030, guid: e5374d81fb013804c9b9e1f4113d857a, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1285601897787046, guid: e5374d81fb013804c9b9e1f4113d857a, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1495796598181212, guid: e5374d81fb013804c9b9e1f4113d857a, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1946215608911346, guid: e5374d81fb013804c9b9e1f4113d857a, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Minigun_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1946215608911346, guid: e5374d81fb013804c9b9e1f4113d857a, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1981898728667092, guid: e5374d81fb013804c9b9e1f4113d857a, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4212910902197874, guid: e5374d81fb013804c9b9e1f4113d857a, type: 3}
       propertyPath: m_RootOrder
@@ -5187,11 +4564,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3376183887566441057, guid: e5374d81fb013804c9b9e1f4113d857a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5227,25 +4599,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1034370804347492, guid: 11bc8b79076688b438395aa46480fe3f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1365320701046442, guid: 11bc8b79076688b438395aa46480fe3f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1555594515587678, guid: 11bc8b79076688b438395aa46480fe3f, type: 3}
       propertyPath: m_Name
       value: SM_Wep_SubMGun_Clean_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1555594515587678, guid: 11bc8b79076688b438395aa46480fe3f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1803645693266330, guid: 11bc8b79076688b438395aa46480fe3f, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4344405482595308, guid: 11bc8b79076688b438395aa46480fe3f, type: 3}
       propertyPath: m_RootOrder
@@ -5291,11 +4647,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3469218571280402779, guid: 11bc8b79076688b438395aa46480fe3f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5325,29 +4676,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1048550344403210, guid: 42815930954465246925396bc5f71226, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638262608615832, guid: 42815930954465246925396bc5f71226, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843672055886088, guid: 42815930954465246925396bc5f71226, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902014581492690, guid: 42815930954465246925396bc5f71226, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1952938124507012, guid: 42815930954465246925396bc5f71226, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Rifle_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1952938124507012, guid: 42815930954465246925396bc5f71226, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4659094642351586, guid: 42815930954465246925396bc5f71226, type: 3}
       propertyPath: m_RootOrder
@@ -5391,11 +4722,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4659094642351586, guid: 42815930954465246925396bc5f71226, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 384909056200507310, guid: 42815930954465246925396bc5f71226,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6111,7 +5437,7 @@ PrefabInstance:
     - target: {fileID: 1160790022763000926, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
         type: 3}
       propertyPath: m_Name
-      value: Zombie2
+      value: Zombie
       objectReference: {fileID: 0}
     - target: {fileID: 1160790022763000926, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
         type: 3}
@@ -6808,29 +6134,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1021108938636484, guid: ca73d5edd3087174cb1ec38fbb6c51c1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1167886286928202, guid: ca73d5edd3087174cb1ec38fbb6c51c1, type: 3}
       propertyPath: m_Name
       value: SM_Wep_MachineGun_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1167886286928202, guid: ca73d5edd3087174cb1ec38fbb6c51c1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1572554610870240, guid: ca73d5edd3087174cb1ec38fbb6c51c1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1837213372012732, guid: ca73d5edd3087174cb1ec38fbb6c51c1, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1849047862950882, guid: ca73d5edd3087174cb1ec38fbb6c51c1, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4010698750569368, guid: ca73d5edd3087174cb1ec38fbb6c51c1, type: 3}
       propertyPath: m_RootOrder
@@ -6876,11 +6182,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4071543559272849659, guid: ca73d5edd3087174cb1ec38fbb6c51c1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6897,26 +6198,6 @@ PrefabInstance:
     - target: {fileID: 1072090535415360, guid: e00dbf8549124104ea3fd57e7041a8fa, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Rifle_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1072090535415360, guid: e00dbf8549124104ea3fd57e7041a8fa, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1120666102970136, guid: e00dbf8549124104ea3fd57e7041a8fa, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1231309946454104, guid: e00dbf8549124104ea3fd57e7041a8fa, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1535901387063048, guid: e00dbf8549124104ea3fd57e7041a8fa, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1778147324825436, guid: e00dbf8549124104ea3fd57e7041a8fa, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4496240175832878, guid: e00dbf8549124104ea3fd57e7041a8fa, type: 3}
       propertyPath: m_RootOrder
@@ -6972,11 +6253,6 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 5994751847418199081, guid: e00dbf8549124104ea3fd57e7041a8fa,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6990,29 +6266,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124219379}
     m_Modifications:
-    - target: {fileID: 1355408963632602, guid: 753bd5418081ffd409d3832375680254, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1485816507113764, guid: 753bd5418081ffd409d3832375680254, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Minigun_Clean_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1485816507113764, guid: 753bd5418081ffd409d3832375680254, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1662999553826100, guid: 753bd5418081ffd409d3832375680254, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1776444730481676, guid: 753bd5418081ffd409d3832375680254, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1780475797115664, guid: 753bd5418081ffd409d3832375680254, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512572978884692, guid: 753bd5418081ffd409d3832375680254, type: 3}
       propertyPath: m_RootOrder
@@ -7068,11 +6324,6 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 9153693554875566820, guid: 753bd5418081ffd409d3832375680254,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7092,29 +6343,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124219379}
     m_Modifications:
-    - target: {fileID: 1183881721114982, guid: 237c78c685e499c4d9cb94a443d61fd8, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1265324198127248, guid: 237c78c685e499c4d9cb94a443d61fd8, type: 3}
       propertyPath: m_Name
       value: SM_Wep_RocketLauncher_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1265324198127248, guid: 237c78c685e499c4d9cb94a443d61fd8, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409115737782438, guid: 237c78c685e499c4d9cb94a443d61fd8, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1691932721851846, guid: 237c78c685e499c4d9cb94a443d61fd8, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1926842238588490, guid: 237c78c685e499c4d9cb94a443d61fd8, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4008630067125804, guid: 237c78c685e499c4d9cb94a443d61fd8, type: 3}
       propertyPath: m_RootOrder
@@ -7170,11 +6401,6 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 6250299924521065049, guid: 237c78c685e499c4d9cb94a443d61fd8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7204,17 +6430,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1221885041743214, guid: 3819452cda6805b47a040ffa6f044596, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1809121837865474, guid: 3819452cda6805b47a040ffa6f044596, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Nailgun_Clean_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809121837865474, guid: 3819452cda6805b47a040ffa6f044596, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4113667658017268, guid: 3819452cda6805b47a040ffa6f044596, type: 3}
       propertyPath: m_RootOrder
@@ -7258,11 +6476,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4113667658017268, guid: 3819452cda6805b47a040ffa6f044596, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3113782269376877766, guid: 3819452cda6805b47a040ffa6f044596,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7580,84 +6793,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 598552956}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2082392817
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.24000013
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -20.991
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157355323452695424, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1160790022763000926, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_Name
-      value: Zombie2 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1160790022763000926, guid: 0c24a8f95755e2d41a4bcbd13638fde4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c24a8f95755e2d41a4bcbd13638fde4, type: 3}
 --- !u!4 &2090625726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4651026209933144, guid: e39a3ebf772e41647abf8bb8bb32e8ac,
@@ -7682,25 +6817,9 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 1197309399356404, guid: 1f6b6564bf0253d43945e9d1f17adca6, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1216028739883728, guid: 1f6b6564bf0253d43945e9d1f17adca6, type: 3}
       propertyPath: m_Name
       value: SM_Wep_Hybrid_02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216028739883728, guid: 1f6b6564bf0253d43945e9d1f17adca6, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1234454774879732, guid: 1f6b6564bf0253d43945e9d1f17adca6, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1902260138503510, guid: 1f6b6564bf0253d43945e9d1f17adca6, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4084357505810786, guid: 1f6b6564bf0253d43945e9d1f17adca6, type: 3}
       propertyPath: m_RootOrder
@@ -7744,11 +6863,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084357505810786, guid: 1f6b6564bf0253d43945e9d1f17adca6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8538924642934913380, guid: 1f6b6564bf0253d43945e9d1f17adca6,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7941,18 +7055,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wep_Shotgun_01
       objectReference: {fileID: 0}
-    - target: {fileID: 1105646471333690, guid: 4276ba2537e432a43821aa6c4b1d43c0, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499018300189918, guid: 4276ba2537e432a43821aa6c4b1d43c0, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1743544927988702, guid: 4276ba2537e432a43821aa6c4b1d43c0, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4579576397550642, guid: 4276ba2537e432a43821aa6c4b1d43c0, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8007,11 +7109,6 @@ PrefabInstance:
       propertyPath: weaponInventory
       value: 
       objectReference: {fileID: 437743221}
-    - target: {fileID: 3699512408389004224, guid: 4276ba2537e432a43821aa6c4b1d43c0,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
