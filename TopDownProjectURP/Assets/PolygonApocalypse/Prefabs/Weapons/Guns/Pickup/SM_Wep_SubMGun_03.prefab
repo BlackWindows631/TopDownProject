@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 33797339149485788}
   - component: {fileID: 23287783328909832}
   - component: {fileID: 64710147775159726}
-  - component: {fileID: 4270035226444837099}
+  - component: {fileID: 2686454944264090231}
   m_Layer: 0
   m_Name: SM_Wep_SubMGun_03
   m_TagString: Weapon
@@ -264,13 +264,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328033259041762}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43637906626562156, guid: 2a16a835c7062f0478e3827a8f00f339, type: 2}
---- !u!114 &4270035226444837099
+--- !u!114 &2686454944264090231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

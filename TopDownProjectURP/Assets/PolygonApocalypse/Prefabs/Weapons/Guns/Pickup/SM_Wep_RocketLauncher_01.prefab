@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33148503590737604}
   - component: {fileID: 23100420200266682}
   - component: {fileID: 64621371638796974}
-  - component: {fileID: -8405447077262429036}
+  - component: {fileID: 2142515716360493407}
   m_Layer: 0
   m_Name: SM_Wep_RocketLauncher_01
   m_TagString: Weapon
@@ -181,13 +181,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265324198127248}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43907127462558768, guid: 0ef179076de5b444591aeb2fcd6b4955, type: 2}
---- !u!114 &-8405447077262429036
+--- !u!114 &2142515716360493407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

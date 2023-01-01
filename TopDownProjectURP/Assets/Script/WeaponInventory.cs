@@ -15,18 +15,24 @@ public class WeaponInventory : MonoBehaviour
     public TwoBoneIKConstraint leftHandIK;
     public RigBuilder rigBuilder;
 
-    private void OnTriggerEnter(Collider other) 
+    /*private void OnTriggerEnter(Collider other) 
     {
-        if(other.gameObject.tag == "Weapon")
+        if(other.gameObject.CompareTag("Weapon"))
         {
             Debug.Log("Weapon detected");
             textMeshH.text = "Pick up " + other.gameObject.name;
         }
-    }
+    }*/
 
     private void OnTriggerStay(Collider other) 
     {
-        if(other.gameObject.tag == "Weapon")
+        Debug.Log(other.gameObject.name);
+        if(other.gameObject.CompareTag("Player"))
+        {
+            return;
+        }
+
+        if(other.gameObject.CompareTag("Weapon"))
         {
             if(Input.GetKey(KeyCode.E))
             {
@@ -41,7 +47,7 @@ public class WeaponInventory : MonoBehaviour
 
     private void OnTriggerExit(Collider other) 
     {
-        if(other.gameObject.tag == "Weapon")
+        if(other.gameObject.CompareTag("Weapon"))
         {
             Debug.Log("Weapon left");
             textMeshH.text = "";

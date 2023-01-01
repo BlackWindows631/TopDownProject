@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33694096561203352}
   - component: {fileID: 23044849817327058}
   - component: {fileID: 64874260520184594}
-  - component: {fileID: -1401858396688530488}
+  - component: {fileID: 998842716001792428}
   m_Layer: 0
   m_Name: SM_Wep_Minigun_Clean_01
   m_TagString: Weapon
@@ -181,13 +181,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485816507113764}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43713057917511210, guid: ee4f9a4eb90278849be5ccd87b84af23, type: 2}
---- !u!114 &-1401858396688530488
+--- !u!114 &998842716001792428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

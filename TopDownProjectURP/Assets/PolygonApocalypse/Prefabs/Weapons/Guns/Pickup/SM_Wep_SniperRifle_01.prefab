@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 33612643866763530}
   - component: {fileID: 23875157421364124}
   - component: {fileID: 64423558742457326}
-  - component: {fileID: 1112235864617797809}
+  - component: {fileID: -5556861560959211366}
   m_Layer: 0
   m_Name: SM_Wep_SniperRifle_01
   m_TagString: Weapon
@@ -514,13 +514,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658074229854742}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43575556844552556, guid: d0cd4c3af44c2f84788bd80e3336de45, type: 2}
---- !u!114 &1112235864617797809
+--- !u!114 &-5556861560959211366
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

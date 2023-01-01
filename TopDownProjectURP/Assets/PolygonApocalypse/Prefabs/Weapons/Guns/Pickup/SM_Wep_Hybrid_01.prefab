@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 33625998777930994}
   - component: {fileID: 23005827699755962}
   - component: {fileID: 64132825646085740}
-  - component: {fileID: -2467650969891497098}
+  - component: {fileID: 4270539024632491372}
   m_Layer: 0
   m_Name: SM_Wep_Hybrid_01
   m_TagString: Weapon
@@ -514,13 +514,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607563544594070}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43682449309773418, guid: 05c117fa972cf224ab4d327b1b82c5e0, type: 2}
---- !u!114 &-2467650969891497098
+--- !u!114 &4270539024632491372
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

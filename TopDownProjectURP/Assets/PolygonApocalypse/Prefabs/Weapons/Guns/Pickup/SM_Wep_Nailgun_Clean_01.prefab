@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33361855679015642}
   - component: {fileID: 23422370832931438}
   - component: {fileID: 64225836769246734}
-  - component: {fileID: 5356513639112492466}
+  - component: {fileID: -5122976364304944323}
   m_Layer: 0
   m_Name: SM_Wep_Nailgun_Clean_01
   m_TagString: Weapon
@@ -178,13 +178,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809121837865474}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43436946790655396, guid: 26ea007d55a287040b47ba930d8ee4d2, type: 2}
---- !u!114 &5356513639112492466
+--- !u!114 &-5122976364304944323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

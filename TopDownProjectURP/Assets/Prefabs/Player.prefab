@@ -70,7 +70,7 @@ Transform:
   - {fileID: 1773762500620839726}
   - {fileID: 5453461567023650879}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1051521610424913187
 Animator:
@@ -85,7 +85,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: a9e083195042b1a4a8e7eade8c356492, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -9768,7 +9768,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 925924904862776922, guid: bd89593957a24bc4f9525f00c07dc56c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1164075706909321687}
+      addedObject: {fileID: 437743222}
     - targetCorrespondingSourceObject: {fileID: 6322492784206004453, guid: bd89593957a24bc4f9525f00c07dc56c,
         type: 3}
       insertIndex: -1
@@ -9784,7 +9784,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1433664286724292045}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &1164075706909321687
+--- !u!135 &437743222
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9803,7 +9803,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 2.51
+  m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &4923540248636336366 stripped
 Transform:
