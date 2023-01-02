@@ -14,7 +14,6 @@ public class CharacterAnimation : MonoBehaviour
     public CharacterController characterController;
     public bool isPrimaryEquipped = false;
     public bool isSecondaryEquipped = false;
-    bool isAimingAnimator;
 
     // Start is called before the first frame update
     void Awake()
@@ -29,7 +28,6 @@ public class CharacterAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        isAimingAnimator = animator.GetBool("isAiming");
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
@@ -45,43 +43,6 @@ public class CharacterAnimation : MonoBehaviour
         else
         {
             animator.SetBool("isRunning", false);
-        }
-
-        if(Input.GetKey(KeyCode.Mouse0))
-        {
-            if(isPrimaryEquipped)
-            {
-                if(!isAimingAnimator)
-                {
-                    animator.Play("Rifle_Aim_Center");
-                }
-            }
-
-            if(isSecondaryEquipped)
-            {
-                if(!isAimingAnimator)
-                {
-                    animator.Play("Pistol_Aim_Center");
-                }
-            }
-        }
-
-        if(Input.GetKey(KeyCode.Mouse1))
-        {
-            animator.SetBool("isAiming",true);
-            if(isPrimaryEquipped)
-            {
-                animator.Play("Rifle_Aim_Center");
-
-            }
-            if(isSecondaryEquipped)
-            {
-                animator.Play("Pistol_Aim_Center");
-            }
-        }
-        else
-        {
-            animator.SetBool("isAiming",false);
         }
 
         if(weaponInventory.secondaryWeapon != null)
