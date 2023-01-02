@@ -14,6 +14,30 @@ public class WeaponInventory : MonoBehaviour
 
     public WeaponObject primaryWeapon;
     public WeaponObject secondaryWeapon;
+    GameObject primaryWeaponGameobject;
+    GameObject secondaryWeaponGameobject;
+
+    private void Update() 
+    {
+        if(primaryWeapon != null)
+        {
+            primaryWeaponGameobject = primaryWeapon.gameObject;
+        }
+
+        if(secondaryWeapon != null)
+        {
+            secondaryWeaponGameobject = secondaryWeapon.gameObject;
+        }
+
+        if(primaryWeapon != null && primaryWeaponGameobject.activeInHierarchy)
+        {
+            currentWeapon = primaryWeapon;
+        }
+        else if(secondaryWeapon != null && secondaryWeaponGameobject.activeInHierarchy)
+        {
+            currentWeapon = secondaryWeapon;
+        }
+    }
 
     public void SetupPrimaryWeapon(int index)
     {
@@ -22,7 +46,6 @@ public class WeaponInventory : MonoBehaviour
             weaponList[i].SetActive(false);
         }
         primaryWeapon = weaponList[index].GetComponent<WeaponObject>();
-        weaponList[index].SetActive(true);
     }
 
     public void SetupSecondaryWeapon(int index)
@@ -32,8 +55,26 @@ public class WeaponInventory : MonoBehaviour
             weaponList[i].SetActive(false);
         }
         secondaryWeapon = weaponList[index].GetComponent<WeaponObject>();
-        weaponList[index].SetActive(true);
     }
 
+    public void ActivatePrimaryWeapon()
+    {
+        primaryWeaponGameobject.SetActive(true);
+    }
+
+    public void DeactivatePrimaryWeapon()
+    {
+        primaryWeaponGameobject.SetActive(false);
+    }
+
+    public void ActivateSecondaryWeapon()
+    {
+        secondaryWeaponGameobject.SetActive(true);
+    }
+
+    public void DeactivateSecondaryWeapon()
+    {
+        secondaryWeaponGameobject.SetActive(false);
+    }
 
 }

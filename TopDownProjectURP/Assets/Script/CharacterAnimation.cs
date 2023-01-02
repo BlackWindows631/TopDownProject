@@ -12,36 +12,9 @@ public class CharacterAnimation : MonoBehaviour
     [SerializeField]
     PlayerMovement playerMovement;
     public CharacterController characterController;
-    bool isPrimaryEquipped = false;
-    bool isSecondaryEquipped = false;
-
-    Vector3 rootMotion;
-
-    PlayerStates playerCurrentState;
-
-    public enum PlayerStates{
-        PISTOL,
-        MOVEMENT,
-        JOG
-    }
-
-    PlayerStates currentState{
-        set{
-            playerCurrentState = value;
-
-            switch(playerCurrentState){
-                case PlayerStates.MOVEMENT:
-                animator.Play("Movement");
-                break;
-                case PlayerStates.JOG:
-                animator.Play("Jog");
-                break;
-                case PlayerStates.PISTOL:
-                animator.Play("Pistol");
-                break;
-            }
-        }
-    }
+    public bool isPrimaryEquipped = false;
+    public bool isSecondaryEquipped = false;
+    bool isAimingAnimator;
 
     // Start is called before the first frame update
     void Awake()
@@ -55,7 +28,9 @@ public class CharacterAnimation : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        isAimingAnimator = animator.GetBool("isAiming");
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -72,9 +47,37 @@ public class CharacterAnimation : MonoBehaviour
             animator.SetBool("isRunning", false);
         }
 
+        if(Input.GetKey(KeyCode.Mouse0))
+        {
+            if(isPrimaryEquipped)
+            {
+                if(!isAimingAnimator)
+                {
+                    animator.Play("Rifle_Aim_Center");
+                }
+            }
+
+            if(isSecondaryEquipped)
+            {
+                if(!isAimingAnimator)
+                {
+                    animator.Play("Pistol_Aim_Center");
+                }
+            }
+        }
+
         if(Input.GetKey(KeyCode.Mouse1))
         {
             animator.SetBool("isAiming",true);
+            if(isPrimaryEquipped)
+            {
+                animator.Play("Rifle_Aim_Center");
+
+            }
+            if(isSecondaryEquipped)
+            {
+                animator.Play("Pistol_Aim_Center");
+            }
         }
         else
         {
@@ -86,15 +89,26 @@ public class CharacterAnimation : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Alpha2))
             {
                 isSecondaryEquipped = !isSecondaryEquipped;
-                if(isSecondaryEquipped == true)
+                if(isSecondaryEquipped == true && isPrimaryEquipped  == true)
                 {
-                    animator.Play("Unholster_gun",1);
+                    isPrimaryEquipped = !isPrimaryEquipped;
+                    animator.Play("Pistol_Unholster");
+                    weaponInventory.DeactivatePrimaryWeapon();
+                    weaponInventory.ActivateSecondaryWeapon();
                 }
-                else if(isSecondaryEquipped == false)
+                else if(isSecondaryEquipped == true && isPrimaryEquipped == false)
                 {
-                    animator.Play("Holster_gun",1);
+                    animator.Play("Pistol_Unholster");
+                    weaponInventory.ActivateSecondaryWeapon();
+                }
+                else if(isSecondaryEquipped == false && isPrimaryEquipped == false)
+                {
+                    animator.Play("Pistol_Holster");
+                    weaponInventory.DeactivateSecondaryWeapon();
+                    weaponInventory.currentWeapon = null;
                 }
                 animator.SetBool("isSecondary",isSecondaryEquipped);
+                animator.SetBool("isPrimary",isPrimaryEquipped);
             }
         }
 
@@ -103,21 +117,28 @@ public class CharacterAnimation : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Alpha1))
             {
                 isPrimaryEquipped = !isPrimaryEquipped;
+                if(isPrimaryEquipped == true && isSecondaryEquipped == true)
+                {
+                    isSecondaryEquipped = !isSecondaryEquipped;
+                    animator.Play("Rifle_Unholster");
+                    weaponInventory.DeactivateSecondaryWeapon();
+                    weaponInventory.ActivatePrimaryWeapon();
+                }
+                else if(isPrimaryEquipped == true && isSecondaryEquipped == false)
+                {
+                    animator.Play("Rifle_Unholster");
+                    weaponInventory.ActivatePrimaryWeapon();
+                }
+                else if(isPrimaryEquipped == false && isSecondaryEquipped == false)
+                {
+                    animator.Play("Rifle_Holster");
+                    weaponInventory.DeactivatePrimaryWeapon();
+                    weaponInventory.currentWeapon = null;
+                }
                 animator.SetBool("isPrimary", isPrimaryEquipped);
+                animator.SetBool("isSecondary",isSecondaryEquipped);
             }
         }
         
-    }
-
-    private void FixedUpdate() 
-    {
-        characterController.Move(rootMotion);
-        rootMotion = Vector3.zero;
-
-    }
-
-    private void OnAnimatorMove() 
-    {
-        rootMotion += animator.deltaPosition;
     }
 }
