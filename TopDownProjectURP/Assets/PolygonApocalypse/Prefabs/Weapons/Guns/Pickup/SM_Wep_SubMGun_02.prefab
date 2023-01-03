@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4560285710443808}
   - component: {fileID: 33502251398729424}
   - component: {fileID: 23694861468937956}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SubMGun_02_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4820404478505988}
   - component: {fileID: 33816217149092298}
   - component: {fileID: 23790126136413280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SubMGun_02_Silencer_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 64821573154621760}
   - component: {fileID: -8377991826336123176}
   - component: {fileID: 2078537760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SubMGun_02
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 2
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &2078537760
 SphereCollider:
@@ -327,7 +328,7 @@ GameObject:
   - component: {fileID: 4550462946061792}
   - component: {fileID: 33267942036988278}
   - component: {fileID: 23951589064063600}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SubMGun_02_Sight_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +411,7 @@ GameObject:
   - component: {fileID: 4495084643187948}
   - component: {fileID: 33483644352854862}
   - component: {fileID: 23738724455018010}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SubMGun_02_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +494,7 @@ GameObject:
   - component: {fileID: 4266352771633410}
   - component: {fileID: 33964223792223454}
   - component: {fileID: 23907433477886800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SubMGun_02_Slide_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +577,7 @@ GameObject:
   - component: {fileID: 4281849888768534}
   - component: {fileID: 33214324312019876}
   - component: {fileID: 23391365601789218}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SubMGun_02_Stock_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7928395655446117828}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

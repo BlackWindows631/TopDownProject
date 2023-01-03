@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4865555570906746}
   - component: {fileID: 33273352208675408}
   - component: {fileID: 23428134335380682}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_02_Handle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,8 +97,7 @@ GameObject:
   - component: {fileID: 64019588657885362}
   - component: {fileID: -6747731876025711206}
   - component: {fileID: 253560550}
-  - component: {fileID: 253560555}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_02
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -210,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &253560550
 SphereCollider:
@@ -232,27 +232,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &253560555
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263777055603640}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5423551
-  m_Center: {x: 0, y: 0.039279766, z: 0.17686443}
 --- !u!1 &1291042460218496
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +243,7 @@ GameObject:
   - component: {fileID: 4080805208174116}
   - component: {fileID: 33117193505885838}
   - component: {fileID: 23803461610827182}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_02_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +326,7 @@ GameObject:
   - component: {fileID: 4314251694239610}
   - component: {fileID: 33131572762877056}
   - component: {fileID: 23224813516403010}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_02_Slide_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +409,7 @@ GameObject:
   - component: {fileID: 4999854736595556}
   - component: {fileID: 33986063800623892}
   - component: {fileID: 23275586698495458}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_02_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 331586654793652281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

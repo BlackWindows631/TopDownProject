@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4326727991325432}
   - component: {fileID: 33110214518872930}
   - component: {fileID: 23976188650985534}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_RocketLauncher_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 64621371638796974}
   - component: {fileID: 2142515716360493407}
   - component: {fileID: 1661498812}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_RocketLauncher_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 2
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &1661498812
 SphereCollider:
@@ -242,7 +243,7 @@ GameObject:
   - component: {fileID: 4266127856197176}
   - component: {fileID: 33990312347712404}
   - component: {fileID: 23053399486707720}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_RocketLauncher_01_Missile_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +326,7 @@ GameObject:
   - component: {fileID: 4038034069616456}
   - component: {fileID: 33459890356435560}
   - component: {fileID: 23961971132101188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_RocketLauncher_01_Trigger_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +409,7 @@ GameObject:
   - component: {fileID: 4068891476462128}
   - component: {fileID: 33131740520671242}
   - component: {fileID: 23181396662453734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_RocketLauncher_01_Fireworks_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2140330594467346792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

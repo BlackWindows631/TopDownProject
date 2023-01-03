@@ -28,6 +28,7 @@ public class WeaponHandler : MonoBehaviour
 
     public ParticleSystem bloodSplash;
 
+    public LayerMask ignoreMeShoot;
     private void Awake() 
     {
         readyToShoot = true;
@@ -92,7 +93,7 @@ public class WeaponHandler : MonoBehaviour
 
         Vector3 direction = weaponInventory.currentWeapon.weaponCanon.transform.forward + new Vector3(x,y,0);
         
-        if(Physics.Raycast(attackPoint.position,direction, out rayHit, weaponObject.range))
+        if(Physics.Raycast(attackPoint.position,direction, out rayHit, weaponObject.range,~ignoreMeShoot))
         {
             tracer.transform.position = rayHit.point;
 

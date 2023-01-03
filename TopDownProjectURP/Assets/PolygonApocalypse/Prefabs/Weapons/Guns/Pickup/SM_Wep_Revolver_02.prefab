@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4488573074123258}
   - component: {fileID: 33610104244210748}
   - component: {fileID: 23697146303523436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_Bullet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4483378291143410}
   - component: {fileID: 33740733259003256}
   - component: {fileID: 23266976964599878}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_Bullet_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4380019239756364}
   - component: {fileID: 33697060836498792}
   - component: {fileID: 23896336611799790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Scope_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 4208521524198264}
   - component: {fileID: 33804791274486556}
   - component: {fileID: 23987113349907388}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Bullets_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4320876009641052}
   - component: {fileID: 33474583368162840}
   - component: {fileID: 23918319791249630}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_Bullet_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 64768277258052512}
   - component: {fileID: 8224332093887760152}
   - component: {fileID: 497012933}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -542,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 16
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &497012933
 SphereCollider:
@@ -575,7 +576,7 @@ GameObject:
   - component: {fileID: 4964254142356984}
   - component: {fileID: 33886112804870328}
   - component: {fileID: 23553352246158158}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Hammer_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +659,7 @@ GameObject:
   - component: {fileID: 4192894740084646}
   - component: {fileID: 33239413018023890}
   - component: {fileID: 23078151274385644}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_Bullet_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -741,7 +742,7 @@ GameObject:
   - component: {fileID: 4448301256087532}
   - component: {fileID: 33165694759324750}
   - component: {fileID: 23436084277182110}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,7 +825,7 @@ GameObject:
   - component: {fileID: 4696038738112022}
   - component: {fileID: 33751075106021314}
   - component: {fileID: 23302260379335502}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +908,7 @@ GameObject:
   - component: {fileID: 4259296983701092}
   - component: {fileID: 33510298529744712}
   - component: {fileID: 23842847368504790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_Bullet_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,7 +991,7 @@ GameObject:
   - component: {fileID: 4034488714380748}
   - component: {fileID: 33643480494620816}
   - component: {fileID: 23957390865331762}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_Spin_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1079,7 +1080,7 @@ GameObject:
   - component: {fileID: 4929486004826142}
   - component: {fileID: 33761100116165670}
   - component: {fileID: 23582632594968474}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Revolver_02_Cylinder_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1161,7 +1162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4032658885939055635}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

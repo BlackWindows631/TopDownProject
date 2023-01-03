@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4389793416851796}
   - component: {fileID: 33495576682654528}
   - component: {fileID: 23761909137395854}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Pistol_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4969980234604548}
   - component: {fileID: 33280037362129334}
   - component: {fileID: 23396009105011570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Pistol_01_Silencer_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4643839630470814}
   - component: {fileID: 33577224928813808}
   - component: {fileID: 23299596719339052}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Pistol_01_Slide_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 64840824895857894}
   - component: {fileID: -2758240754696902565}
   - component: {fileID: 1923593609}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Pistol_01
   m_TagString: Secondary
   m_Icon: {fileID: 0}
@@ -376,6 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &1923593609
 SphereCollider:
@@ -409,7 +410,7 @@ GameObject:
   - component: {fileID: 4949550751971396}
   - component: {fileID: 33621400450968114}
   - component: {fileID: 23675158842297408}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Pistol_01_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +493,7 @@ GameObject:
   - component: {fileID: 4480256335942086}
   - component: {fileID: 33519362477639176}
   - component: {fileID: 23216757028454572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Pistol_01_Stock_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4925747794789221380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

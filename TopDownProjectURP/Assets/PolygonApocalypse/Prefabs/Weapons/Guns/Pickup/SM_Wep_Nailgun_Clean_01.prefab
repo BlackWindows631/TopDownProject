@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4821388300206672}
   - component: {fileID: 33142799189637804}
   - component: {fileID: 23974126618686936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Nailgun_Clean_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 64225836769246734}
   - component: {fileID: -5122976364304944323}
   - component: {fileID: 1281467219}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Nailgun_Clean_01
   m_TagString: Secondary
   m_Icon: {fileID: 0}
@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 13
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &1281467219
 SphereCollider:
@@ -237,7 +238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1233511157041093984}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

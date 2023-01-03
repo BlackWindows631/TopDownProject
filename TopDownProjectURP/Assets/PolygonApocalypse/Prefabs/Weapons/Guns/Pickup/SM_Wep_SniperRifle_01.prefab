@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4027073855146276}
   - component: {fileID: 33315848344740142}
   - component: {fileID: 23204743877139118}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_01_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4892289224855322}
   - component: {fileID: 33371363823213640}
   - component: {fileID: 23550007457329506}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_01_Bolt_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4481329641457680}
   - component: {fileID: 33291252647126448}
   - component: {fileID: 23063054116765112}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 4022199744519112}
   - component: {fileID: 33947100348719608}
   - component: {fileID: 23447517504632946}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_01_Bullets_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4302914873427008}
   - component: {fileID: 33206567744857188}
   - component: {fileID: 23463033177598412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_01_Magazine_01_Scope_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 64423558742457326}
   - component: {fileID: -5556861560959211366}
   - component: {fileID: 1954455359}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -542,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 2
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &1954455359
 SphereCollider:
@@ -573,7 +574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4343961694631383947}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

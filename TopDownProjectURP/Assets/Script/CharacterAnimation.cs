@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 
 public class CharacterAnimation : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class CharacterAnimation : MonoBehaviour
     Animator animator;
     WeaponHandler weaponHandler;
     WeaponInventory weaponInventory;
+
+    [SerializeField]TwoBoneIKConstraint rightHandIK;
+    [SerializeField]TwoBoneIKConstraint leftHandIK;
+    Rig rig;
 
     [SerializeField]
     PlayerMovement playerMovement;
@@ -23,18 +28,15 @@ public class CharacterAnimation : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         weaponHandler = GetComponent<WeaponHandler>();
         weaponInventory = GetComponentInChildren<WeaponInventory>();
+        rig = GetComponentInChildren<Rig>();
     }
 
     // Update is called once per frame
     void Update()
     {   
-
-        float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-
         animator.SetFloat("forward",z);
-        animator.SetFloat("strafe",x);
 
         if(Input.GetKey(KeyCode.LeftShift))
         {
@@ -50,26 +52,21 @@ public class CharacterAnimation : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Alpha2))
             {
                 isSecondaryEquipped = !isSecondaryEquipped;
-                if(isSecondaryEquipped == true && isPrimaryEquipped  == true)
+                if(isSecondaryEquipped == true && isPrimaryEquipped == false)
                 {
-                    isPrimaryEquipped = !isPrimaryEquipped;
-                    animator.Play("Pistol_Unholster");
-                    weaponInventory.DeactivatePrimaryWeapon();
                     weaponInventory.ActivateSecondaryWeapon();
-                }
-                else if(isSecondaryEquipped == true && isPrimaryEquipped == false)
-                {
-                    animator.Play("Pistol_Unholster");
-                    weaponInventory.ActivateSecondaryWeapon();
+                    animator.SetBool("hasGun",true);
+                    rightHandIK.weight = 1;
+                    leftHandIK.weight = 1;
                 }
                 else if(isSecondaryEquipped == false && isPrimaryEquipped == false)
                 {
-                    animator.Play("Pistol_Holster");
                     weaponInventory.DeactivateSecondaryWeapon();
+                    animator.SetBool("hasGun",false);
                     weaponInventory.currentWeapon = null;
+                    rightHandIK.weight = 0;
+                    leftHandIK.weight = 0;
                 }
-                animator.SetBool("isSecondary",isSecondaryEquipped);
-                animator.SetBool("isPrimary",isPrimaryEquipped);
             }
         }
 
@@ -78,26 +75,21 @@ public class CharacterAnimation : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Alpha1))
             {
                 isPrimaryEquipped = !isPrimaryEquipped;
-                if(isPrimaryEquipped == true && isSecondaryEquipped == true)
+                if(isPrimaryEquipped == true && isSecondaryEquipped == false)
                 {
-                    isSecondaryEquipped = !isSecondaryEquipped;
-                    animator.Play("Rifle_Unholster");
-                    weaponInventory.DeactivateSecondaryWeapon();
                     weaponInventory.ActivatePrimaryWeapon();
-                }
-                else if(isPrimaryEquipped == true && isSecondaryEquipped == false)
-                {
-                    animator.Play("Rifle_Unholster");
-                    weaponInventory.ActivatePrimaryWeapon();
+                    animator.SetBool("hasGun",true);
+                    rightHandIK.weight = 1;
+                    leftHandIK.weight = 1;
                 }
                 else if(isPrimaryEquipped == false && isSecondaryEquipped == false)
                 {
-                    animator.Play("Rifle_Holster");
                     weaponInventory.DeactivatePrimaryWeapon();
+                    animator.SetBool("hasGun",false);
                     weaponInventory.currentWeapon = null;
+                    rightHandIK.weight = 0;
+                    leftHandIK.weight = 0;
                 }
-                animator.SetBool("isPrimary", isPrimaryEquipped);
-                animator.SetBool("isSecondary",isSecondaryEquipped);
             }
         }
         

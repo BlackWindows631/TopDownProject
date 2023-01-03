@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4553708126759066}
   - component: {fileID: 33286581885807968}
   - component: {fileID: 23654484053339186}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_HuntingRifle_Clean_01_Scope_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4739123024952568}
   - component: {fileID: 33996777908221180}
   - component: {fileID: 23192278070481574}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_HuntingRifle_Clean_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 64904634067792218}
   - component: {fileID: -6228406610943903819}
   - component: {fileID: 2145080926}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_HuntingRifle_Clean_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 4
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &2145080926
 SphereCollider:
@@ -324,7 +325,7 @@ GameObject:
   - component: {fileID: 4130038499891632}
   - component: {fileID: 33531141279297384}
   - component: {fileID: 23047246647333356}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_HuntingRifle_Clean_01_Bolt_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 187312355252077448}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

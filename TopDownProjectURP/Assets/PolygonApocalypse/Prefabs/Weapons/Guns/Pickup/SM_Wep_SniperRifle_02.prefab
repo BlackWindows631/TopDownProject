@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4921395591526524}
   - component: {fileID: 33320766433407054}
   - component: {fileID: 23049514186704048}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_02_Bolt_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4530748175318332}
   - component: {fileID: 33545604199678664}
   - component: {fileID: 23372807481732040}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_02_Scope_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4100311928797470}
   - component: {fileID: 33945343953549282}
   - component: {fileID: 23391745143984008}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_02_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 4826873065489602}
   - component: {fileID: 33945999502874104}
   - component: {fileID: 23732586273930282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_02_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4245163540319388}
   - component: {fileID: 33707234758721292}
   - component: {fileID: 23899169585912740}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_02_Bullets_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 64306085207828510}
   - component: {fileID: -8385847638743207286}
   - component: {fileID: 1327273478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_02
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -542,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 2
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &1327273478
 SphereCollider:
@@ -573,7 +574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6848411363862020074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

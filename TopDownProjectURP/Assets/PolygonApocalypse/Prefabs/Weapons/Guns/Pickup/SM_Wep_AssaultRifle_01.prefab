@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4907732309285560}
   - component: {fileID: 33431821430598242}
   - component: {fileID: 23655205582502270}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4511294836295628}
   - component: {fileID: 33155191156597364}
   - component: {fileID: 23695898661847586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_01_Slide_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4467178002644394}
   - component: {fileID: 33269618996341372}
   - component: {fileID: 23313764127063452}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_01_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 64181910784515640}
   - component: {fileID: -5667169567219162257}
   - component: {fileID: 755363666}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_AssaultRifle_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -374,6 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &755363666
 SphereCollider:
@@ -405,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3461211980771060016}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

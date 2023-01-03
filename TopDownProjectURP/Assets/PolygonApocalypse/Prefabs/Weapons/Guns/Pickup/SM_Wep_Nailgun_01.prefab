@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4605534344890198}
   - component: {fileID: 33191478018449690}
   - component: {fileID: 23952422357777362}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Nailgun_01_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4996217385429424}
   - component: {fileID: 33476826797027468}
   - component: {fileID: 23577053599910090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Nailgun_01_Handle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4228950152232782}
   - component: {fileID: 33303034517647530}
   - component: {fileID: 23495656227246074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Nailgun_01_Sights_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 64588679116565244}
   - component: {fileID: -2947980934054323837}
   - component: {fileID: 752068449}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Nailgun_01
   m_TagString: Secondary
   m_Icon: {fileID: 0}
@@ -374,6 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &752068449
 SphereCollider:
@@ -405,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543453050751003985}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

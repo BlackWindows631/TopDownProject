@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4297393301672690}
   - component: {fileID: 33095479124025188}
   - component: {fileID: 23680475045645236}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_Clean_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 64874260520184594}
   - component: {fileID: 998842716001792428}
   - component: {fileID: 834579147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_Clean_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &834579147
 SphereCollider:
@@ -242,7 +243,7 @@ GameObject:
   - component: {fileID: 4426924811815270}
   - component: {fileID: 33905168672403034}
   - component: {fileID: 23697376200621784}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_Clean_01_Button_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +326,7 @@ GameObject:
   - component: {fileID: 4040851366216630}
   - component: {fileID: 33090927138719260}
   - component: {fileID: 23458789661988206}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_Clean_01_magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +409,7 @@ GameObject:
   - component: {fileID: 4351338569431786}
   - component: {fileID: 33432573247882210}
   - component: {fileID: 23417465574600560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_Clean_01_Barrel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8737243400194247106}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

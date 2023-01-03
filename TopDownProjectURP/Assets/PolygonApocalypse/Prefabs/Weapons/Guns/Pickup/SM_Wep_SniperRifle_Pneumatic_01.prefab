@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4961224397843770}
   - component: {fileID: 33479623476874364}
   - component: {fileID: 23198377906629964}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_Pneumatic_01_Handle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 64508593304072544}
   - component: {fileID: 568481350050777864}
   - component: {fileID: 2090625731}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_Pneumatic_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 24
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &2090625731
 SphereCollider:
@@ -242,7 +243,7 @@ GameObject:
   - component: {fileID: 4856597519658044}
   - component: {fileID: 33539295093468718}
   - component: {fileID: 23789620181038420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_Pneumatic_01_Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +326,7 @@ GameObject:
   - component: {fileID: 4982480943632820}
   - component: {fileID: 33281298955331378}
   - component: {fileID: 23222110021527804}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_Pneumatic_01_Scope_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +409,7 @@ GameObject:
   - component: {fileID: 4542656679773204}
   - component: {fileID: 33152189649291878}
   - component: {fileID: 23466856429534564}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_SniperRifle_Pneumatic_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1521521128014985717}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

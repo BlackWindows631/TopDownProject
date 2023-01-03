@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 64771036782388702}
   - component: {fileID: -5353342889801236291}
   - component: {fileID: 2012770290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 7
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &2012770290
 SphereCollider:
@@ -158,7 +159,7 @@ GameObject:
   - component: {fileID: 4616755587282678}
   - component: {fileID: 33114640633014946}
   - component: {fileID: 23904194999150582}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_Bullet_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +242,7 @@ GameObject:
   - component: {fileID: 4561013760584582}
   - component: {fileID: 33362320622009588}
   - component: {fileID: 23769043637619234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_Bullet_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +325,7 @@ GameObject:
   - component: {fileID: 4513449623172190}
   - component: {fileID: 33273243530677424}
   - component: {fileID: 23746680497691600}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_Bullet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +408,7 @@ GameObject:
   - component: {fileID: 4417737105486840}
   - component: {fileID: 33273135014566444}
   - component: {fileID: 23026879873205010}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_Bullet_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +491,7 @@ GameObject:
   - component: {fileID: 4419338874916328}
   - component: {fileID: 33982553589441442}
   - component: {fileID: 23645691713816802}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +574,7 @@ GameObject:
   - component: {fileID: 4979906968588464}
   - component: {fileID: 33547329000940886}
   - component: {fileID: 23154196325066058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_Bullet_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +657,7 @@ GameObject:
   - component: {fileID: 4982034053231670}
   - component: {fileID: 33174777203304822}
   - component: {fileID: 23050070603667116}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_Spin_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +746,7 @@ GameObject:
   - component: {fileID: 4448131231149540}
   - component: {fileID: 33242854395541430}
   - component: {fileID: 23652911741866226}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Hammer_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -828,7 +829,7 @@ GameObject:
   - component: {fileID: 4624178545474978}
   - component: {fileID: 33796149784532824}
   - component: {fileID: 23732558508914974}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_Bullet_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -911,7 +912,7 @@ GameObject:
   - component: {fileID: 4703657421869816}
   - component: {fileID: 33295211114149930}
   - component: {fileID: 23461847817196390}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Hybrid_03_Cylinder_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -993,7 +994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 650729756973820701}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

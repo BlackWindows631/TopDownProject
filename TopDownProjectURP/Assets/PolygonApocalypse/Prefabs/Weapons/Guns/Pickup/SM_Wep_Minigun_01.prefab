@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4041419704579074}
   - component: {fileID: 33232971606497832}
   - component: {fileID: 23133108115342484}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_01_Barrel_Wire_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4608470362390946}
   - component: {fileID: 33293008179105960}
   - component: {fileID: 23102154350950716}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 33346216520204332}
   - component: {fileID: 23735004966742888}
   - component: {fileID: 64641939386022442}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_01_Barrel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 64615748728105830}
   - component: {fileID: -3701441471797339945}
   - component: {fileID: 1263726974}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -398,6 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &1263726974
 SphereCollider:
@@ -431,7 +432,7 @@ GameObject:
   - component: {fileID: 4521061434853912}
   - component: {fileID: 33975673700429640}
   - component: {fileID: 23299582666179396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Minigun_01_Magazine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7312007153154623251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

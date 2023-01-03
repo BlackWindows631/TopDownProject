@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 64094202111403934}
   - component: {fileID: 2819534553782765060}
   - component: {fileID: 1790481319}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Shotgun_01
   m_TagString: Primary
   m_Icon: {fileID: 0}
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 21
+  textMeshH: {fileID: 0}
   weaponInventory: {fileID: 0}
 --- !u!135 &1790481319
 SphereCollider:
@@ -157,7 +158,7 @@ GameObject:
   - component: {fileID: 4090837561580350}
   - component: {fileID: 33423504894847552}
   - component: {fileID: 23651080472567072}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Shotgun_01_Handle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +241,7 @@ GameObject:
   - component: {fileID: 4049237987872910}
   - component: {fileID: 33906444114304168}
   - component: {fileID: 23641303531718370}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Wep_Shotgun_01_Trigger_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6008597081273793056}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
