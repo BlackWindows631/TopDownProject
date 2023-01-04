@@ -17,8 +17,12 @@ public class CharacterAnimation : MonoBehaviour
     [SerializeField]
     PlayerMovement playerMovement;
     public CharacterController characterController;
+    Vector3 velocity;
     public bool isPrimaryEquipped = false;
     public bool isSecondaryEquipped = false;
+
+    Vector3 moveVelocity;
+    float gravity = -20f;
 
     // Start is called before the first frame update
     void Awake()
@@ -92,6 +96,11 @@ public class CharacterAnimation : MonoBehaviour
                 }
             }
         }
+
+        moveVelocity.y += gravity * Time.deltaTime;
+        characterController.Move(moveVelocity * Time.deltaTime);
+
         
     }
+
 }

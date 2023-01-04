@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Primary
   - Secondary
+  - Building
   layers:
   - Default
   - TransparentFX
