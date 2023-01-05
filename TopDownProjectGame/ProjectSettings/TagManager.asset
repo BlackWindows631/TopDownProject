@@ -9,6 +9,7 @@ TagManager:
   - Secondary
   - Enemy
   - Barrel
+  - Testable
   layers:
   - Default
   - TransparentFX
