@@ -5,36 +5,42 @@ using TMPro;
 
 public class WeaponPickup : MonoBehaviour
 {
-    public int index;
-
     public TextMeshProUGUI textMeshH;
-    public WeaponInventory weaponInventory;
+    WeaponInventory weaponInventory;
+    WeaponIndex weaponIndex;
+
+    private void Awake() 
+    {
+        weaponInventory = GetComponentInChildren<WeaponInventory>();
+    }
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Primary") || other.gameObject.CompareTag("Secondary"))
         {
-            textMeshH.text = "Pick up " + this.gameObject.name;
+            textMeshH.text = "Pick up " + other.gameObject.name;
         }
     }
 
     private void OnTriggerStay(Collider other) 
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Primary") || other.gameObject.CompareTag("Secondary"))
         {
             if(Input.GetKey(KeyCode.E))
             {
-                if(this.gameObject.CompareTag("Primary"))
+                if(other.gameObject.CompareTag("Primary"))
                 {
-                    weaponInventory.SetupPrimaryWeapon(index);
+                    weaponIndex = other.gameObject.GetComponent<WeaponIndex>();
+                    weaponInventory.SetupPrimaryWeapon(weaponIndex.weaponIndex);
                     textMeshH.text = "";
-                    Destroy(this.gameObject);
+                    Destroy(other.gameObject);
                 }
-                else if(this.gameObject.CompareTag("Secondary"))
+                else if(other.gameObject.CompareTag("Secondary"))
                 {
-                    weaponInventory.SetupSecondaryWeapon(index);
+                    weaponIndex = other.gameObject.GetComponent<WeaponIndex>();
+                    weaponInventory.SetupSecondaryWeapon(weaponIndex.weaponIndex);
                     textMeshH.text = "";
-                    Destroy(this.gameObject);
+                    Destroy(other.gameObject);
                 }
             }
         }
@@ -42,7 +48,7 @@ public class WeaponPickup : MonoBehaviour
 
     private void OnTriggerExit(Collider other) 
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Primary") || other.gameObject.CompareTag("Secondary"))
         {
             textMeshH.text = "";
         }

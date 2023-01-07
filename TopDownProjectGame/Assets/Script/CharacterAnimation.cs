@@ -53,7 +53,7 @@ public class CharacterAnimation : MonoBehaviour
             canShoot = true;
         }
 
-        if(Input.GetKey(KeyCode.LeftShift) && animator.GetFloat("forward") > 0)
+        if(Input.GetKey(KeyCode.LeftShift) && animator.GetFloat("forward") > 0 && playerMovement.canRun)
         {
             animator.SetBool("isRunning", true);
             canShoot = false;
