@@ -54,7 +54,7 @@ public class WeaponHandler : MonoBehaviour
             attackPoint = weaponObject.weaponCanon.transform;
         
             MyInput();
-            RotateWeapon();
+            //RotateWeapon();
             text.text = bulletsLeft.ToString() + " / " + weaponObject.magazineSize.ToString();
         }
         
@@ -140,7 +140,7 @@ public class WeaponHandler : MonoBehaviour
 
             }
         
-            Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+            Instantiate(muzzleFlash, attackPoint.position, transform.rotation);
             bulletsLeft--;
             bulletsShot--;
             Invoke("ResetShot",weaponObject.timeBetweenShooting);
@@ -162,9 +162,9 @@ public class WeaponHandler : MonoBehaviour
         reloading = false;
     }
 
-    private void RotateWeapon()
+    /*private void RotateWeapon()
     {
-        /*mousePosition = Input.mousePosition;
+        mousePosition = Input.mousePosition;
         Ray ray = cameraPlayer.ScreenPointToRay(Input.mousePosition);
 
         if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue, 1 << LayerMask.NameToLayer("Mousable")))
@@ -173,8 +173,8 @@ public class WeaponHandler : MonoBehaviour
             target.y = weaponInventory.currentWeapon.transform.position.y;
             weaponInventory.currentWeapon.transform.LookAt(target);
             
-        }*/
-    }
+        }
+    }*/
 
     private void OnCompleted(object sender, System.EventArgs e)
     {
