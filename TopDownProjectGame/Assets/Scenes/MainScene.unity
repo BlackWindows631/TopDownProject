@@ -4173,6 +4173,12 @@ PrefabInstance:
       propertyPath: cameraPlayer
       value: 
       objectReference: {fileID: 934571639}
+    - target: {fileID: 1164075707293174647, guid: e2eb061e19e85b9498b64e12827bd14a,
+        type: 3}
+      propertyPath: smokeTrailPrefab
+      value: 
+      objectReference: {fileID: 7329845158802601835, guid: 98f6e22e46dbc91488ffdd33b6c45445,
+        type: 3}
     - target: {fileID: 3162398821492872585, guid: e2eb061e19e85b9498b64e12827bd14a,
         type: 3}
       propertyPath: m_UiScaleMode
