@@ -29,10 +29,12 @@ public class WeaponHandler : MonoBehaviour
     public ParticleSystem bloodSplash;
 
     public LayerMask ignoreMeShoot;
+    CharacterAnimation characterAnimation;
     private void Awake() 
     {
         readyToShoot = true;
         weaponInventory = GetComponentInChildren<WeaponInventory>();
+        characterAnimation = GetComponent<CharacterAnimation>();
     }
 
     private void Update() 
@@ -68,7 +70,7 @@ public class WeaponHandler : MonoBehaviour
             Reload();
         }
 
-        if(readyToShoot && shooting && !reloading && bulletsLeft > 0)
+        if(readyToShoot && shooting && !reloading && bulletsLeft > 0 && characterAnimation.canShoot)
         {
             bulletsShot = weaponObject.bulletsPerTap;
             Shoot();

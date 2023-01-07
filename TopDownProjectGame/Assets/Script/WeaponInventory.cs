@@ -37,6 +37,11 @@ public class WeaponInventory : MonoBehaviour
         {
             currentWeapon = secondaryWeapon;
         }
+
+        if(currentWeapon == null)
+        {
+            textMeshH.text = "XX/XX";
+        }
     }
 
     public void SetupPrimaryWeapon(int index)

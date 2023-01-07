@@ -6,18 +6,23 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     public Vector3 mousePosition;
-    public int speed = 5;
+    public float speed;
+    public float rotationSpeed;
     private float horizontalInput;
     private float verticalInput;
     private float time;
     public Camera cameraPlayer;
     public LayerMask layerMask;
+    public bool handleRotation = true;
+    public bool handlePosition = true;
 
     float stamina;
     float maxStamina = 100;
     public bool canRun = true;
     bool isUsingStamina = false;
     bool startReset = false;
+    CharacterController characterController;
+    Vector3 moveVelocity;
 
     [Header("Graphics")]
     public Slider slider;
@@ -26,12 +31,13 @@ public class PlayerMovement : MonoBehaviour
     {
         stamina = maxStamina;
         slider.maxValue = maxStamina;
+        characterController = GetComponent<CharacterController>();
     }
 
     void Update()
     {
         HandleMovement();
-        RotateTorwardMouse();   
+        HandleRotation();   
         slider.value = stamina;
 
         if(stamina >= maxStamina)
@@ -54,40 +60,56 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
     private void HandleMovement()
     {
-
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-
-        if(stamina <= 0)
+        if(handlePosition)
         {
-            canRun = false;
-            ResetStamina();
+            horizontalInput = Input.GetAxis("Horizontal");
+            verticalInput = Input.GetAxis("Vertical");
+    
+        
+            if(characterController.isGrounded)
+            {
+                moveVelocity = transform.forward * speed * verticalInput;
+            }
+            characterController.Move(moveVelocity * Time.deltaTime);
+
+            if(stamina <= 0)
+            {
+                canRun = false;
+                ResetStamina();
+            }
+
+            if(Input.GetKey(KeyCode.LeftShift) && canRun)
+            {
+                stamina -= Time.deltaTime * 10;
+                time = 0;
+                isUsingStamina = true;
+            }
+            else
+            {
+                isUsingStamina = false;
+            }
         }
 
-        if(Input.GetKey(KeyCode.LeftShift) && canRun)
-        {
-            stamina -= Time.deltaTime * 10;
-            time = 0;
-            isUsingStamina = true;
-        }
-        else
-        {
-            isUsingStamina = false;
-        }
+        
     }
-    private void RotateTorwardMouse()
+    private void HandleRotation()
     {
-        mousePosition = Input.mousePosition;
-        Ray ray = cameraPlayer.ScreenPointToRay(Input.mousePosition);
-
-        if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue, 1 << LayerMask.NameToLayer("Mousable")))
+        if(handleRotation)
         {
-            var target = hitInfo.point;
-            target.y = transform.position.y;
-            transform.LookAt(target);
+            mousePosition = Input.mousePosition;
+            Ray ray = cameraPlayer.ScreenPointToRay(Input.mousePosition);
+
+            if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue, 1 << LayerMask.NameToLayer("Mousable")))
+            {
+                var target = hitInfo.point;
+                target.y = transform.position.y;
+                transform.LookAt(target);
+            }
         }
+        
     }
     private void ResetStamina()
     {

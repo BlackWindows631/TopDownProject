@@ -38,7 +38,6 @@ public class IKFootPlacement : MonoBehaviour
                 
             }
 
-
             ray = new Ray(animator.GetIKPosition(AvatarIKGoal.RightFoot) + Vector3.up, Vector3.down);
             if(Physics.Raycast(ray,out hit,distanceToGround + 1f, layerMask))
             {

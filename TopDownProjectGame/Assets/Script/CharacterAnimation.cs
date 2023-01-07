@@ -19,6 +19,7 @@ public class CharacterAnimation : MonoBehaviour
     Vector3 velocity;
     public bool isPrimaryEquipped = false;
     public bool isSecondaryEquipped = false;
+    public bool canShoot;
 
     Vector3 moveVelocity;
     float gravity = -20f;
@@ -41,13 +42,37 @@ public class CharacterAnimation : MonoBehaviour
 
         animator.SetFloat("forward",z);
 
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(animator.GetBool("isRunning"))
+        {
+            playerMovement.speed = 7f;
+            canShoot = false;
+        }
+        else
+        {
+            playerMovement.speed = 3.5f;
+            canShoot = true;
+        }
+
+        if(Input.GetKey(KeyCode.LeftShift) && animator.GetFloat("forward") > 0)
         {
             animator.SetBool("isRunning", true);
+            canShoot = false;
         }
         else
         {
             animator.SetBool("isRunning", false);
+            canShoot = true;
+        }
+
+        if(Input.GetKey(KeyCode.Space))
+        {
+            animator.Play("Roll");
+        }
+        
+        if(animator.GetBool("isRunning") && animator.GetFloat("forward") < 0)
+        {
+            playerMovement.speed = 3.5f;
+            animator.SetBool("isRunning",false);
         }
 
         if(weaponInventory.secondaryWeapon != null)
@@ -59,16 +84,12 @@ public class CharacterAnimation : MonoBehaviour
                 {
                     weaponInventory.ActivateSecondaryWeapon();
                     animator.SetBool("hasGun",true);
-                    rightHandIK.weight = 1;
-                    leftHandIK.weight = 1;
                 }
                 else if(isSecondaryEquipped == false && isPrimaryEquipped == false)
                 {
                     weaponInventory.DeactivateSecondaryWeapon();
                     animator.SetBool("hasGun",false);
                     weaponInventory.currentWeapon = null;
-                    rightHandIK.weight = 0;
-                    leftHandIK.weight = 0;
                 }
             }
         }
@@ -81,25 +102,19 @@ public class CharacterAnimation : MonoBehaviour
                 if(isPrimaryEquipped == true && isSecondaryEquipped == false)
                 {
                     weaponInventory.ActivatePrimaryWeapon();
-                    animator.SetBool("hasGun",true);
-                    rightHandIK.weight = 1;
-                    leftHandIK.weight = 1;
+                    animator.SetBool("hasWeapon",true);
                 }
                 else if(isPrimaryEquipped == false && isSecondaryEquipped == false)
                 {
                     weaponInventory.DeactivatePrimaryWeapon();
-                    animator.SetBool("hasGun",false);
+                    animator.SetBool("hasWeapon",false);
                     weaponInventory.currentWeapon = null;
-                    rightHandIK.weight = 0;
-                    leftHandIK.weight = 0;
                 }
             }
         }
 
         moveVelocity.y += gravity * Time.deltaTime;
         characterController.Move(moveVelocity * Time.deltaTime);
-
-        
     }
 
 }
