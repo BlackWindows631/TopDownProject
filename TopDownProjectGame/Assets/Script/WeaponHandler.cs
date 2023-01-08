@@ -46,7 +46,7 @@ public class WeaponHandler : MonoBehaviour
     {
         if(weaponInventory.currentWeapon == null)
         {
-
+            
         }
         else
         {
@@ -91,19 +91,16 @@ public class WeaponHandler : MonoBehaviour
 
     private void Shoot()
     {
-        
             readyToShoot = false;
-
-                   
 
             float x = Random.Range(-weaponObject.spread, weaponObject.spread);
             float y = Random.Range(-weaponObject.spread, weaponObject.spread);
 
-            Vector3 direction = weaponInventory.currentWeapon.weaponCanon.transform.forward + new Vector3(x,y,0);
-        
+            Vector3 direction = attackPoint.forward + new Vector3(x,y,0);
+
             for(int i = 0 ; i < weaponObject.bulletsPerTap ; i++)
             {
-           
+            
                 /*var tracer = Instantiate(bulletTrail,attackPoint.position,Quaternion.identity);
                 tracer.AddPosition(attackPoint.position); */
                 Bullet bullet = Instantiate(bulletPrefab,attackPoint.position,Quaternion.identity);
@@ -113,15 +110,15 @@ public class WeaponHandler : MonoBehaviour
                 if(Physics.Raycast(attackPoint.position,direction, out rayHit, weaponObject.range,~ignoreMeShoot))
                 {
                     //tracer.transform.position = rayHit.point;
-                    bullet.DrawLine(attackPoint.position,rayHit.point,100f,0);
+                    bullet.DrawLine(attackPoint.position,rayHit.point,100f);
 
                     if(rayHit.collider.CompareTag("Enemy"))
                     {
-                        EnemySystem enemySystem = rayHit.collider.gameObject.GetComponent<EnemySystem>();
+                        ZombieStats zombie = rayHit.collider.gameObject.GetComponent<ZombieStats>();
                         Instantiate(bloodSplash,rayHit.point,Quaternion.LookRotation(rayHit.normal));
-                        enemySystem.health -= weaponObject.damage;
+                        zombie.health -= weaponObject.damage;
                         Debug.DrawLine(attackPoint.position,rayHit.point,Color.green,1000f);
-                    } 
+                    }
                     else if (rayHit.collider.CompareTag("Barrel"))
                     {
                         ExplosiveBarrel explosiveBarrel = rayHit.collider.gameObject.GetComponent<ExplosiveBarrel>();
@@ -135,17 +132,19 @@ public class WeaponHandler : MonoBehaviour
                 }
                 else
                 {
-                    bullet.DrawRay(attackPoint.position,transform.forward,100f,1000f,0f);
+                    bullet.DrawRay(attackPoint.position,transform.forward,100f,100f);
+                    Debug.DrawLine(attackPoint.position,transform.forward,Color.black,100f);
                 }
 
             }
-        
+
             Instantiate(muzzleFlash, attackPoint.position, transform.rotation);
             bulletsLeft--;
             bulletsShot--;
             Invoke("ResetShot",weaponObject.timeBetweenShooting);
 
-            if(bulletsShot > 0 && bulletsLeft > 0){
+            if(bulletsShot > 0 && bulletsLeft > 0)
+            {
                 Invoke("Shoot",weaponObject.timeBetweenShots);
             }
         
@@ -161,20 +160,6 @@ public class WeaponHandler : MonoBehaviour
         bulletsLeft = weaponObject.magazineSize;
         reloading = false;
     }
-
-    /*private void RotateWeapon()
-    {
-        mousePosition = Input.mousePosition;
-        Ray ray = cameraPlayer.ScreenPointToRay(Input.mousePosition);
-
-        if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue, 1 << LayerMask.NameToLayer("Mousable")))
-        {
-            var target = hitInfo.point;
-            target.y = weaponInventory.currentWeapon.transform.position.y;
-            weaponInventory.currentWeapon.transform.LookAt(target);
-            
-        }
-    }*/
 
     private void OnCompleted(object sender, System.EventArgs e)
     {

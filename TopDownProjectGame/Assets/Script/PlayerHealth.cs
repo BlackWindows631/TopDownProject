@@ -1,42 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    int maxHealth = 100;
-    int currentHealth;
+    public float maxHealth = 1000;
+    public float currentHealth;
+    [SerializeField] Slider healthSlider;
 
 
     private void Awake() 
     {
         currentHealth = maxHealth;
+        healthSlider.maxValue = maxHealth;
     }
 
-    private void OnCollisionEnter(Collision other) 
+    private void Update() 
     {
-        if(other.gameObject.tag == "AddHealth")
-        {
-            if(currentHealth >= 100)
-            {
-                currentHealth = 100;
-            }
-            else
-            {
-                currentHealth += 20;
-            }
-        }
-
-        if(other.gameObject.tag == "RemoveHealth")
-        {
-            if(currentHealth <= 14)
-            {
-                currentHealth = 0;
-            }
-            else
-            {
-                currentHealth -= 15;
-            }
-        }
+        healthSlider.value = currentHealth;
     }
 }
