@@ -427,8 +427,8 @@ GameObject:
   - component: {fileID: 33612643866763530}
   - component: {fileID: 23875157421364124}
   - component: {fileID: 64423558742457326}
-  - component: {fileID: 1954455359}
   - component: {fileID: -2313893902690416488}
+  - component: {fileID: 8932775760326131954}
   m_Layer: 7
   m_Name: SM_Wep_SniperRifle_01
   m_TagString: Primary
@@ -521,19 +521,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43575556844552556, guid: d0cd4c3af44c2f84788bd80e3336de45, type: 2}
---- !u!135 &1954455359
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658074229854742}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-2313893902690416488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,6 +534,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponIndex: 22
+  isInView: 0
+--- !u!114 &8932775760326131954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658074229854742}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3986492321019131189
 GameObject:
   m_ObjectHideFlags: 0

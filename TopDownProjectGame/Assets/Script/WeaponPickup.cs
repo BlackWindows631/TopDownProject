@@ -8,6 +8,10 @@ public class WeaponPickup : MonoBehaviour
     public TextMeshProUGUI textMeshH;
     WeaponInventory weaponInventory;
     WeaponIndex weaponIndex;
+    Vector3 mousePosition;
+    [SerializeField] GameObject playerTransform;
+    public Camera cameraPlayer;
+    public LayerMask layerMask;
 
     private void Awake() 
     {
@@ -18,30 +22,60 @@ public class WeaponPickup : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Primary") || other.gameObject.CompareTag("Secondary"))
         {
-            textMeshH.text = "Pick up " + other.gameObject.name;
+            Outline outline = other.gameObject.GetComponent<Outline>();
+            outline.enabled = true;
+        }
+
+        if(other.gameObject.CompareTag("Pickable"))
+        {
+            Outline outline = other.gameObject.GetComponent<Outline>();
+            outline.enabled = true;
         }
     }
 
     private void OnTriggerStay(Collider other) 
     {
-        if(other.gameObject.CompareTag("Primary") || other.gameObject.CompareTag("Secondary"))
+        mousePosition = Input.mousePosition;
+        Ray ray = cameraPlayer.ScreenPointToRay(Input.mousePosition);
+        
+        if(other.gameObject.CompareTag("Primary") || other.gameObject.CompareTag("Secondary") || other.gameObject.CompareTag("Pickable"))
         {
-            if(Input.GetKey(KeyCode.E))
+            if(Physics.Raycast(ray,out RaycastHit hitInfo, float.MaxValue, ~layerMask))
             {
-                if(other.gameObject.CompareTag("Primary"))
+                if(hitInfo.collider.CompareTag("Primary") || hitInfo.collider.CompareTag("Secondary") || hitInfo.collider.CompareTag("Pickable"))
                 {
-                    weaponIndex = other.gameObject.GetComponent<WeaponIndex>();
-                    weaponInventory.SetupPrimaryWeapon(weaponIndex.weaponIndex);
-                    textMeshH.text = "";
-                    Destroy(other.gameObject);
+                    textMeshH.text = "E to pick up " + hitInfo.collider.name;
+                    if(Input.GetKey(KeyCode.E))
+                    {
+                        if(hitInfo.collider.CompareTag("Primary"))
+                        {
+                            weaponIndex = hitInfo.collider.gameObject.GetComponent<WeaponIndex>();
+                            weaponInventory.SetupPrimaryWeapon(weaponIndex.weaponIndex);
+                            textMeshH.text = "";
+                            Destroy(hitInfo.collider.gameObject);
+                        }
+                        else if(hitInfo.collider.CompareTag("Secondary"))
+                        {
+                            weaponIndex = hitInfo.collider.gameObject.GetComponent<WeaponIndex>();
+                            weaponInventory.SetupSecondaryWeapon(weaponIndex.weaponIndex);
+                            textMeshH.text = "";
+                            Destroy(hitInfo.collider.gameObject);
+                        }
+                        else if(hitInfo.collider.CompareTag("Pickable"))
+                        {
+                            textMeshH.text = "";
+                            Destroy(hitInfo.collider.gameObject);
+                        }
+                    }
                 }
-                else if(other.gameObject.CompareTag("Secondary"))
+                else
                 {
-                    weaponIndex = other.gameObject.GetComponent<WeaponIndex>();
-                    weaponInventory.SetupSecondaryWeapon(weaponIndex.weaponIndex);
                     textMeshH.text = "";
-                    Destroy(other.gameObject);
                 }
+            }
+            else
+            {
+                textMeshH.text = "";
             }
         }
     }
@@ -51,6 +85,15 @@ public class WeaponPickup : MonoBehaviour
         if(other.gameObject.CompareTag("Primary") || other.gameObject.CompareTag("Secondary"))
         {
             textMeshH.text = "";
+            Outline outline = other.gameObject.GetComponent<Outline>();
+            outline.enabled = false;
+        }
+
+        if(other.gameObject.CompareTag("Pickable"))
+        {
+            textMeshH.text = "";
+            Outline outline = other.gameObject.GetComponent<Outline>();
+            outline.enabled = false;
         }
     }
 }

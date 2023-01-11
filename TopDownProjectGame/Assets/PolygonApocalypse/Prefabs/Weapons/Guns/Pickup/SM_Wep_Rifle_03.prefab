@@ -178,8 +178,8 @@ GameObject:
   - component: {fileID: 33972794391129074}
   - component: {fileID: 23650251740315828}
   - component: {fileID: 64441073127169268}
-  - component: {fileID: 2090375225}
   - component: {fileID: -8941074298869318448}
+  - component: {fileID: 1166073528723781540}
   m_Layer: 7
   m_Name: SM_Wep_Rifle_03
   m_TagString: Primary
@@ -270,19 +270,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43073495438852794, guid: 01d8a21a6fee7c2499cc0b9ea7bfb250, type: 2}
---- !u!135 &2090375225
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652972229580220}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-8941074298869318448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +283,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponIndex: 19
+  isInView: 0
+--- !u!114 &1166073528723781540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652972229580220}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1840541810645620
 GameObject:
   m_ObjectHideFlags: 0

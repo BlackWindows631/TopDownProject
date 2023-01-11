@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Barrel
   - Testable
+  - Pickable
   layers:
   - Default
   - TransparentFX

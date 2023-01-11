@@ -8,6 +8,9 @@ public class WeaponInventory : MonoBehaviour
 {
     public GameObject[] weaponList;
     RaycastHit hit;
+
+    public TextMeshProUGUI primaryWeaponText;
+    public TextMeshProUGUI secondaryWeaponText;
     
     public TextMeshProUGUI textMeshH;
     public WeaponObject currentWeapon;
@@ -19,6 +22,24 @@ public class WeaponInventory : MonoBehaviour
 
     private void Update() 
     {
+        if(primaryWeapon == null)
+        {
+            primaryWeaponText.text = "1. NULL";
+        }
+        else
+        {
+            primaryWeaponText.text = "1. " + primaryWeapon.name;
+        }
+        
+        if (secondaryWeapon == null)
+        {
+            secondaryWeaponText.text = "2. NULL";
+        }
+        else
+        {
+            secondaryWeaponText.text = "2. " + secondaryWeapon.name;
+        }
+
         if(primaryWeapon != null)
         {
             primaryWeaponGameobject = primaryWeapon.gameObject;

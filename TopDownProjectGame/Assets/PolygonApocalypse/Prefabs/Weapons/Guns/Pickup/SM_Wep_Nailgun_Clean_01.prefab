@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 33361855679015642}
   - component: {fileID: 23422370832931438}
   - component: {fileID: 64225836769246734}
-  - component: {fileID: 1281467219}
   - component: {fileID: -2903451271704738090}
+  - component: {fileID: -3383418687864426283}
   m_Layer: 7
   m_Name: SM_Wep_Nailgun_Clean_01
   m_TagString: Secondary
@@ -185,19 +185,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43436946790655396, guid: 26ea007d55a287040b47ba930d8ee4d2, type: 2}
---- !u!135 &1281467219
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809121837865474}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-2903451271704738090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +198,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponIndex: 13
+  isInView: 0
+--- !u!114 &-3383418687864426283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809121837865474}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3113782269376877766
 GameObject:
   m_ObjectHideFlags: 0

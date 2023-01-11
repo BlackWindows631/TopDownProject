@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 33715313786698822}
   - component: {fileID: 23605850764259648}
   - component: {fileID: 64259826431223292}
-  - component: {fileID: 1764103755}
   - component: {fileID: 7337381322468976263}
+  - component: {fileID: -5181820773911734409}
   m_Layer: 7
   m_Name: SM_Wep_SubMGun_01
   m_TagString: Secondary
@@ -104,19 +104,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43102009237788248, guid: f6559fc8a45c72e4d97b857cc20d08e4, type: 2}
---- !u!135 &1764103755
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025874851918808}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7337381322468976263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +117,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponIndex: 25
+  isInView: 0
+--- !u!114 &-5181820773911734409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025874851918808}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1083545751773082
 GameObject:
   m_ObjectHideFlags: 0
