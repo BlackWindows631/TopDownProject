@@ -12,10 +12,11 @@ public class WeaponPickup : MonoBehaviour
     [SerializeField] GameObject playerTransform;
     public Camera cameraPlayer;
     public LayerMask layerMask;
-
+    InventoryHolder inventoryHolder;
     private void Awake() 
     {
         weaponInventory = GetComponentInChildren<WeaponInventory>();
+        inventoryHolder = GetComponent<InventoryHolder>();
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -63,8 +64,12 @@ public class WeaponPickup : MonoBehaviour
                         }
                         else if(hitInfo.collider.CompareTag("Pickable"))
                         {
+                            ItemPickUpData itemPickUpData = hitInfo.collider.gameObject.GetComponent<ItemPickUpData>();
+                            if(inventoryHolder.InventorySystem.AddToInventory(itemPickUpData.itemData,1))
+                            {
+                                Destroy(hitInfo.collider.gameObject);
+                            }
                             textMeshH.text = "";
-                            Destroy(hitInfo.collider.gameObject);
                         }
                     }
                 }
