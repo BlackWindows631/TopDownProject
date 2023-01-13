@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Test Item
   m_EditorClassIdentifier: 
   ID: 0
+  amountToPickUp: 1
   DisplayName: Test item 1
   Description: 'This is a test '
   Icon: {fileID: 0}

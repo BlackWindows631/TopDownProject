@@ -63,13 +63,14 @@ public class WeaponPickup : MonoBehaviour
                             Destroy(hitInfo.collider.gameObject);
                         }
                         else if(hitInfo.collider.CompareTag("Pickable"))
-                        {
-                            ItemPickUpData itemPickUpData = hitInfo.collider.gameObject.GetComponent<ItemPickUpData>();
+                        {/*
+                            ItemPickUpData itemPickUpData = null;
+                            itemPickUpData = hitInfo.collider.GetComponent<ItemPickUpData>();
                             if(inventoryHolder.InventorySystem.AddToInventory(itemPickUpData.itemData,1))
                             {
+                                textMeshH.text = "";
                                 Destroy(hitInfo.collider.gameObject);
-                            }
-                            textMeshH.text = "";
+                            }*/
                         }
                     }
                 }
